@@ -16,13 +16,14 @@
   <!-- Font Awsome Icons -->
   <script src="https://kit.fontawesome.com/2786bc3471.js" crossorigin="anonymous"></script> 
  <script src="/Script/javascript.js" crossorigin="anonymous"></script>
-  <link rel="stylesheet" type="text/css" href="/CSS/Style.css" />
+  <link rel="stylesheet" type="text/css" href="/CSS/style.css" />
 
   <!-- Font Awsome Icons -->
   <script src="https://kit.fontawesome.com/2786bc3471.js" crossorigin="anonymous"></script> 
  <script src="/Script/javascript.js" crossorigin="anonymous"></script>
 <style>
-     * {
+
+  * {
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
@@ -31,17 +32,17 @@
   }
   
   :root {
-    --primary-color: #ffdd00;
+  --primary-color: rgb(239, 213, 16);
     --secondary-color: #262626;
   }
   
-  ::selection {
+  /*::selection {
     background-color: var(--primary-color);
     color: rgb(255, 255, 255);
   }
-  
+  */
   body {
-    background-color: #101113;
+    background-color: #264fa0;
     color: white;
   }
   
@@ -50,7 +51,7 @@
   }
   
   #header {
-    background-image: url("/");
+    background-image: url("https://i.ibb.co/jHTHTJx/alexander-shatov-PHH-0uw9-Qw-unsplash.jpg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -67,7 +68,7 @@
   
   span.bgcolor,
   .bgcolor {
-    background-color: var(--primary-color);
+   /*c background-color: var(--primary-color);*/
     display: inline-block;
     padding: 0 5px;
     border-radius: 2px;
@@ -93,7 +94,7 @@
     font-weight: 600;
     background-color: transparent;
     cursor: pointer;
-    transition: background 0.5s, color 0.5s;
+    /*transition: background 0.5s, color 0.5s;*/
   }
   
   .btn:hover {
@@ -285,19 +286,19 @@
   
   .services-col a {
     text-decoration: none;
-    color: white;
+    /*color: white;*/
     font-weight: 600;
-    color: var(--primary-color);
+    /*color: var(--primary-color);*/
   }
   
   .services-col:hover {
-    background-color: var(--primary-color);
-    color: black;
+    /*background-color: var(--primary-color);*/
+    /*color: black;*/
     transform: translateY(-14px);
   }
   
   .services-col:hover a {
-    color: black;
+   /* color: black;*/
   }
   
   /* ------------------- Portfolio ------------------- */
@@ -396,14 +397,14 @@
     border-radius: 10px;
     border: none;
     outline: none;
-    background-color: var(--secondary-color);
     font-size: 16px;
     color: white;
+        background-color: var(--secondary-color);
   }
   
   .contact-left form input::placeholder,
   textarea::placeholder {
-    color: white;
+    /*color: white;*/
   }
   
   #contact form input[type="submit"] {
@@ -421,8 +422,8 @@
   }
   
   #contact form input[type="submit"]:hover {
-    background-color: transparent;
-    color: var(--primary-color);
+    /*background-color: transparent;
+    color: var(--primary-color);*/
   }
   
   .contact-right {
@@ -458,11 +459,11 @@
     text-decoration: none;
     display: inline-block;
     transition: color 0.5s, transform 0.5s;
-    color: white;
+    /*color: white;*/
   }
   
   .contact-right ul li a:hover {
-    color: var(--primary-color);
+    /*color: var(--primary-color);*/
     transform: translateY(-8px);
   }
   /* ------------------- Footer ------------------- */
@@ -501,8 +502,7 @@
   
     nav ul .fa-solid {
       position: absolute;
-      top: 15px;
-      right: 15px;
+   
       transition: color 0.5s;
     }
   
@@ -706,7 +706,7 @@
     position: absolute;
     width: 60vw;
     height: 60vw;
-    background-color: var(--clr-1);
+    /*background-color: var(--clr-1);*/
     border-radius: 37% 29% 27% 27% / 28% 25% 41% 37%;
     filter: blur(var(--blur));
     mix-blend-mode: overlay;
@@ -719,7 +719,7 @@
   }
   
   .aurora__item:nth-of-type(2) {
-    background-color: var(--clr-3);
+    /*background-color: var(--clr-3);*/
     right: 0;
     top: 0;
     animation: aurora-border 6s ease-in-out infinite,
@@ -727,7 +727,7 @@
   }
   
   .aurora__item:nth-of-type(3) {
-    background-color: var(--clr-2);
+    /*background-color: var(--clr-2);*/
     left: 0;
     bottom: 0;
     animation: aurora-border 6s ease-in-out infinite,
@@ -850,25 +850,450 @@
     100% {
       border-radius: 37% 29% 27% 27% / 28% 25% 41% 37%;
     }
-  }
-  /* c */
 
+  }
+
+
+/* In Dark Mood 
+body.dark{
+  background: #111;
+  color: #fafafa;
+}
+body.dark .ball{
+  transform: translate(42px);
+  background: #fafafa;
+}
+body.dark .fa-moon{
+  color: #111;
+}
+
+.darkMood{
+  background-color: rgb(133, 133, 133);
+  width: 60px;
+  height: 25px;
+  border-radius: 30px;
+  position: relative;
+  padding: 5px;
+}
+.checkbox{
+  opacity: 0;
+  position: absolute;
+}
+label{
+  display: flex;
+  justify-content: space-between;
+  align-items: center; 
+  padding:0px;
+}
+.fas{
+  font-size: 0.9.5rem;
+  color: white;
+}
+.ball{
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  transition: .2s;
+  background: #222;
+  position: absolute;
+  margin-left: -10px;
+}*/
+
+
+
+    /*------------------- Btn ---------------- */
+
+
+button {
+  display: block;
+    margin: 20px auto 0px auto;
+    padding: 10px 30px;
+    border-radius: 5px;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+  --button-bg: hsl(0, 0%, 18%);
+  --button-fg: hsl(0 0% 90%);
+  --hover-bg: hsl(0 0% 90%);
+  color:  hsl(0 0% 90%);
+  font-family: sans-serif;
+  padding: 1rem 2rem;
+  border-radius: 100px;
+  border: 2px solid hsl(0 0% 90%);
+  background: hsl(0, 0%, 18%);
+  cursor: pointer;
+  touch-action: none;
+  position: relative;
+  overflow: hidden;
+}
+
+button:nth-of-type(2) {
+  --button-bg: hsl(0, 0%, 18%);
+  --hover-bg:  hsl(0 0% 90%);
+  color: hsl(0, 0%, 18%);
+}
+
+button .back {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  overflow: hidden;
+  border-radius: 100px;
+}
+
+.back > span {
+  left: calc(var(--x, 0) * 1px);
+  top: calc(var(--y, 0) * 1px);
+  width: 50%;
+  display: inline-block;
+  aspect-ratio: 1;
+  background: red;
+  transform: translate(-50%, -50%) scale(var(--active, 0));
+  transition: transform 0.25s;
+  background: var(--hover-bg);
+  position: absolute;
+  pointer-events: none;
+  overflow: hidden;
+  mix-blend-mode: difference;
+  border-radius: 50%;
+}
+
+button:is(:hover, :focus-visible) {
+  --active: 1.5;
+}
+
+button:active {
+  --active: 3;
+}
+
+button:active .back > span {
+  transition: transform 0.15s;
+}
+
+@supports (transition-timing-function: linear(0, 1)) {
+  button:is(:hover, :focus-visible) .back > span {
+    transition-duration: 0.5s;
+    transition-timing-function: linear(
+      0, 0.5007 7.21%, 0.7803 12.29%,
+      0.8883 14.93%, 0.9724 17.63%,
+      1.0343 20.44%, 1.0754 23.44%,
+      1.0898 25.22%, 1.0984 27.11%,
+      1.1014 29.15%, 1.0989 31.4%,
+      1.0854 35.23%, 1.0196 48.86%,
+      1.0043 54.06%, 0.9956 59.6%,
+      0.9925 68.11%, 1
+    );
+  }
+}
+/*-----dynamicText-------*/
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+
+.dynamicText {
+  display: flex;
+
+}
+.dynamicText p {
+  font-size: 3rem;
+  font-weight: bold;
+  letter-spacing: 0.1rem;
+  text-align: center;
+  overflow: hidden;
+}
+.dynamicText p span.typed-text {
+  font-weight: normal;
+  color: #d96afe;
+}
+.dynamicText p span.cursors {
+  display: inline-block;
+  background-color: #ccc;
+  margin-left: 0.1rem;
+  width: 3px;
+  animation: blink 1s infinite;
+}
+.dynamicText p span.cursors.typing {
+  animation: none;
+}
+@keyframes blink {
+  0%  { background-color: #ccc; }
+  49% { background-color: #ccc; }
+  50% { background-color: transparent; }
+  99% { background-color: transparent; }
+  100%  { background-color: #ccc; }
+}
+/*------------txt---------*/
+
+
+#slider {
+  width: 600px;
+  display: flex;
+  gap: 15px;
+  font-size: 30px;
+}
+
+#sliderValue {
+  display: flex;
+  color: #3e5d7b;
+    font-weight: 700;
+}
+
+.start {
+  opacity: 0;
+}
+
+.animation {
+  animation: fade .3s forwards;
+}
+
+
+@keyframes fade {
+  0%{
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100%{
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
+
+.holder-animation {
+  animation: holder 4s;
+}
+
+@keyframes holder {
+  0%{
+    opacity: 1;
+  }
+  95%{
+    opacity: 1;
+  }
+  100%{
+    opacity: 0;
+  }
+}
+
+body .socials {
+  position: fixed;
+  display: block;
+  left: 20px;
+  bottom: 20px;
+}
+body .socials > a {
+  display: block;
+  width: 30px;
+  opacity: 0.3;
+  transform: scale(var(--scale, 0.8));
+  transition: transform 0.3s cubic-bezier(0.38, -0.12, 0.24, 1.91);
+}
+body .socials > a:hover {
+  --scale: 1;
+}
+
+
+
+
+
+
+.ease-all{
+	-webkit-transition: all 400ms ease-in-out;
+	-moz-transition: all 400ms ease-in-out;
+	-o-transition: all 400ms ease-in-out;
+	-ms-transition: all 400ms ease-in-out;
+	transition: all 400ms ease-in-out;
+}
+
+/* Social Icons */
+
+.social{
+	height: 10rem;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+
+.social li a{
+	display: inline-block;
+	float: left;
+	width: 40px;
+	height: 40px;
+	margin-right: 1rem;
+	text-align: center;
+	padding-top: 13px;
+	
+	-webkit-border-radius:20px;
+	-moz-border-radius:20px;
+	-o-border-radius:20px;
+	-ms-border-radius:20px;
+	border-radius:20px;
+	
+	/*background-color: #222;*/
+	-webkit-box-shadow: inset 0 0 0 40px #222;
+	-moz-box-shadow: inset 0 0 0 40px #222;
+	-o-box-shadow: inset 0 0 0 40px #222;
+	-ms-box-shadow: inset 0 0 0 40px #222;
+	box-shadow: inset 0 0 0 40px #222;
+	
+	color: #fff;
+}
+
+.social li a:hover{
+	-webkit-box-shadow: inset 0 0 0 3px #222;
+	-moz-box-shadow: inset 0 0 0 3px #222;
+	-o-box-shadow: inset 0 0 0 3px #222;
+	-ms-box-shadow: inset 0 0 0 3px #222;
+	box-shadow: inset 0 0 0 3px #222;
+	
+	color: #ffffff;
+}
+
+/*Top button*/
+#myBtn {
+  display: none; /* Hidden by default */
+  position: fixed; /* Fixed/sticky position */
+  bottom: 20px; /* Place the button at the bottom of the page */
+  right: 30px; /* Place the button 30px from the right */
+  z-index: 99; /* Make sure it does not overlap */
+  border: none; /* Remove borders */
+  outline: none; /* Remove outline */
+  background-color: rgb(144, 144, 144); /* Set a background color */
+  color: white; /* Text color */
+  cursor: pointer; /* Add a mouse pointer on hover */
+  padding: 15px; /* Some padding */
+  border-radius: 50px; /* Rounded corners */
+  font-size: 18px; /* Increase font size */
+}
+
+#myBtn:hover {
+  background-color:#fa0707; /* Add a dark-grey background on hover */
+}
+
+/*-----------------------------Scroll down----
+
+
+@-webkit-keyframes ani-mouse {
+	0% {
+	opacity: 1;
+	top: 29%;
+	}
+	15% {
+	opacity: 1;
+	top: 50%;
+	}
+	50% {
+	opacity: 0;
+	top: 50%;
+	}
+	100% {
+	opacity: 0;
+	top: 29%;
+	}
+}
+@-moz-keyframes ani-mouse {
+	0% {
+	opacity: 1;
+	top: 29%;
+	}
+	15% {
+	opacity: 1;
+	top: 50%;
+	}
+	50% {
+	opacity: 0;
+	top: 50%;
+	}
+	100% {
+	opacity: 0;
+	top: 29%;
+	}
+}
+@keyframes ani-mouse {
+	0% {
+	opacity: 1;
+	top: 29%;
+	}
+	15% {
+	opacity: 1;
+	top: 50%;
+	}
+	50% {
+	opacity: 0;
+	top: 50%;
+	}
+	100% {
+	opacity: 0;
+	top: 29%;
+	}
+}
+ .scroll-btn {
+  padding-top:5%;
+	display: block;
+	position: absolute;
+	left: 0;
+	right: 0;
+	text-align: center;
+}
+.scroll-btn > * {
+	display: inline-block;
+	line-height: 18px;
+	font-size: 13px;
+	font-weight: normal;
+	color: #7f8c8d;
+	color: #ffffff;
+	font-family: "proxima-nova", "Helvetica Neue", Helvetica, Arial, sans-serif;
+	letter-spacing: 2px;
+}
+.scroll-btn > *:hover,
+.scroll-btn > *:focus,
+.scroll-btn > *.active {
+	color: #ffffff;
+}
+.scroll-btn > *:hover,
+.scroll-btn > *:focus,
+.scroll-btn > *:active,
+.scroll-btn > *.active {
+	opacity: 0.8;
+	filter: alpha(opacity=80);
+}
+.scroll-btn .mouse {
+	position: relative;
+	display: block;
+	width: 35px;
+	height: 55px;
+	margin: 0 auto 20px;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	border: 3px solid white;
+	border-radius: 23px;
+}
+.scroll-btn .mouse > * {
+	position: absolute;
+	display: block;
+	top: 29%;
+	left: 50%;
+	width: 8px;
+	height: 8px;
+	margin: -4px 0 0 -4px;
+	background: white;
+	border-radius: 50%;
+	-webkit-animation: ani-mouse 2.5s linear infinite;
+	-moz-animation: ani-mouse 2.5s linear infinite;
+	animation: ani-mouse 2.5s linear infinite;
+}*/
+
+/*----------------------------------------------*/
 :root {
   --circle-size: 25px;
   --letter-width: 14px;
   --letter-space: 60px;
   --font-size: 10px;
-  --letter-spacing-x: 20;
+  --letter-spacing-x: 15;
   --second-circle-border: 4px;
   --second-circle-size: 35px;
 }
 
-body {
-
-  background-color: #191a1e;
-  color: white;
- 
-}
 
 .cursor {
   position: absolute;
@@ -916,7 +1341,7 @@ body {
 }
 
 .cursor.active {
-  background: rgba(0,0,0,0);
+  background: rgba(255, 255, 255, 0);
 }
 
 .cursor.active:after {
@@ -928,9 +1353,12 @@ body {
 nav a {
   text-decoration: none !important;
   color: white;
-  font-weight: 700;
-  font-size: 30px;
-  padding: 20px 40px;
+
+  padding: 10px 10px;
+
+   display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
 
@@ -963,7 +1391,13 @@ nav a {
     transform: rotate(360deg);
   }
 }
+
+
+
+
 </style>
+
+
 </head>
 <body>
 <div class="cursor">
