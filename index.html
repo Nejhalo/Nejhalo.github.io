@@ -41,7 +41,7 @@
   }
   */
   body {
-    background-color: #0e1117;
+    background-color: var(--primary-color);
     color: white;
   }
   
@@ -67,7 +67,7 @@
   
   span.bgcolor,
   .bgcolor {
-   /*c background-color: var(--primary-color);*/
+   background-color: var(--primary-color);
     display: inline-block;
     padding: 0 5px;
     border-radius: 2px;
@@ -93,7 +93,7 @@
     font-weight: 600;
     background-color: transparent;
     cursor: pointer;
-    /*transition: background 0.5s, color 0.5s;*/
+    transition: background 0.5s, color 0.5s;
   }
   
   .btn:hover {
@@ -291,8 +291,8 @@
   }
   
   .services-col:hover {
-    /*background-color: var(--primary-color);*/
-    /*color: black;*/
+    background-color: var(--primary-color);
+    color: black;
     transform: translateY(-14px);
   }
   
@@ -337,7 +337,7 @@
     justify-content: center;
     background: linear-gradient(
       0deg,
-      rgba(0, 72, 255, 0.646) 0%,
+      rgba(43, 57, 92, 0.978) 0%,
       rgba(38, 38, 38, 0.644750702247191) 100%
     );
     border-radius: 17px;
@@ -1168,8 +1168,6 @@ body .socials > a:hover {
   background-color:var(--button-bg)/* Add a dark-grey background on hover */
 }
 /*-----------------------------Scroll down----
-
-
 @-webkit-keyframes ani-mouse {
 	0% {
 	opacity: 1;
