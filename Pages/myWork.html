@@ -1,10 +1,21 @@
-<!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <style>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Work</title>
+ <!-- add icon link -->
+ <link rel="shortcut icon" type="image/x-icon" href="/img/Frame-19.ico" />
+ 
+  <!-- Font (Poppins) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  <link >
+  <!-- Font Awsome Icons -->
+  <script src="https://kit.fontawesome.com/2786bc3471.js" crossorigin="anonymous"></script> 
+
+  <style>
         /* RESET RULES
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 :root {
@@ -16,6 +27,9 @@
 * {
   margin: 0;
   padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    box-sizing: border-box;
 }
 
 img {
@@ -34,7 +48,6 @@ a {
 }
 
 body {
-  margin: 50px 0;
   color: var(--black);
   font: 1rem/1.3 sans-serif;
 }
@@ -43,10 +56,6 @@ body {
   padding: 1.5rem;
 }
 
-.container {
-  max-width: 1200px;
-  margin: 0 auto;
-}
 
 h1 {
   text-align: center;
@@ -99,13 +108,13 @@ input[type="radio"] {
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 .posts {
   display: grid;
-  grid-gap: 1.5rem;
+  grid-gap: 1rem;
   grid-template-columns: repeat(4, 1fr);
 }
 
 .posts .post {
-  background: #fafafa;
-  border: 1px solid rgba(0, 0, 0, 0.1);
+  background: #ffa3a3;
+  border: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 .posts .post-title {
@@ -173,20 +182,6 @@ input[type="radio"] {
   display: none;
 }
 
-
-/* FOOTER
-–––––––––––––––––––––––––––––––––––––––––––––––––– */
-footer {
-  font-size: 1rem;
-  padding: 0 1.5rem;
-  text-align: right;
-}
-
-footer span {
-  color: #e31b23;
-}
-
-
 /* MQ
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 @media screen and (max-width: 900px) {
@@ -204,9 +199,321 @@ footer span {
     grid-template-columns: repeat(2, 1fr);
   }
 }
+/*______________________________________header/footer___________________*/
+
+  :root {
+    --primary-color: #ffdd00;
+    --secondary-color: #262626;
+  }
+  
+  
+  body {
+    background-color: #101113;
+  
+  }
+  
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  #header {
+    background-image: url("/");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    width: 100%;
+    height: 100vh;
+    position: relative;
+  }
+  
+  /* ------------------- Utility Classes -------------------*/
+  .color {
+    color: var(--primary-color);
+  }
+  
+  span.bgcolor,
+  .bgcolor {
+    background-color: var(--primary-color);
+    display: inline-block;
+    padding: 0 5px;
+    border-radius: 2px;
+    color: black;
+  }
+  
+  .container {
+    padding: 20px 8%;
+  }
+  
+  .sub-title {
+    font-size: 60px;
+    font-weight: 800;
+  }
+  .btn {
+    display: block;
+    margin: 20px auto 0px auto;
+    border: 1px solid var(--primary-color);
+    padding: 10px 30px;
+    border-radius: 5px;
+    color: var(--primary-color);
+    font-size: 20px;
+    font-weight: 600;
+    background-color: transparent;
+    cursor: pointer;
+    transition: background 0.5s, color 0.5s;
+  }
+  
+  .btn:hover {
+    background-color: var(--primary-color);
+    color: black;
+  }
+  /* -------------------------------------------------------*/
+  nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  nav img {
+    width: 190px;
+  }
+  
+  nav .fa-solid,
+  nav p {
+    display: none;
+  }
+  
+  nav ul li {
+    display: inline-block;
+    margin-right: 18px;
+    position: relative;
+  }
+  
+  nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 19px;
+    display: inline-block;
+    font-weight: 600;
+  }
+  
+  nav ul li a span {
+    font-size: 18px;
+    font-weight: 900;
+  }
+  
+  nav ul li a::after {
+    content: "";
+    width: 0%;
+    height: 3px;
+    background: var(--primary-color);
+    position: absolute;
+    left: 0px;
+    bottom: -6px;
+    transition: width 0.5s;
+  }
+  
+  nav ul li a:hover::after {
+    width: 100%;
+  }
+  
+  .header-text {
+    margin-top: 300px;
+  }
+  
+  .header-text p {
+    font-size: 30px;
+    font-weight: 500;
+  }
+  
+  .header-text h1 {
+    font-size: 50px;
+    font-weight: 800;
+  }
+  
+ 
+  /* ------------------- Footer ------------------- */
+  footer {
+    background: var(--secondary-color);
+    color: var(--white);
+    text-align: center;
+    position: sticky;
+    
+  }
+  
+  /* ------------------- CSS For Mobile Screens ------------------- */
+  
+  @media screen and (max-width: 890px) {
+    #header nav ul li a .color {
+      color: black;
+    }
+  
+ 
+  
+    nav ul {
+      position: absolute;
+      top: 0px;
+      right: -500px;
+      height: 100vh;
+      width: 40%;
+      background: var(--primary-color);
+      display: flex;
+      flex-direction: column;
+      padding: 25px 25px;
+      z-index: 4;
+    }
+  
+    nav ul .fa-solid {
+      position: absolute;
+      top: 15px;
+      right: 15px;
+      transition: color 0.5s;
+    }
+  
+    nav ul .fa-solid:hover {
+      color: black;
+    }
+    nav .fa-solid,
+    nav p {
+      display: block;
+      font-size: 35px;
+      cursor: pointer;
+    }
+  
+    nav ul li a {
+      transition: color 0.5s;
+      font-size: 23px;
+      margin-top: 15px;
+    }
+  
+    nav ul li a:hover {
+      color: black;
+    }
+  
+    .header-text {
+      margin-top: 250px;
+    }
+  
+    .header-text p {
+      font-size: 27px;
+    }
+  
+    .header-text h1 {
+      font-size: 45px;
+    }
+  }
+  
+  @media screen and (max-width: 600px) {
+    /* -------------- Utility Clases ------------------ */
+    .sub-title {
+      font-size: 40px;
+    }
+  
+    nav ul li a {
+      font-size: 20px;
+    }
+  
+    .header-text {
+      margin-top: 250px;
+    }
+  
+    .header-text p {
+      font-size: 25px;
+    }
+  
+    .header-text h1 {
+      font-size: 40px;
+    }
+  
+  
+    /*------------------- Contact Section ---------------- */
+    #contact .row {
+      flex-direction: column;
+    }
+  
+    #contact p {
+      font-size: 16px;
+    }
+    .contact-left {
+      order: 2;
+    }
+    .contact-right {
+      order: 1;
+    }
+  }
+  
+  @media screen and (max-width: 890px) {
+    .header-text {
+      margin-top: 200px;
+    }
+  
+    .header-text p {
+      font-size: 20px;
+    }
+  
+    .header-text h1 {
+      font-size: 35px;
+    }
+  }
+  
+  @media screen and (max-width: 502px) {
+    .header-text {
+      margin-top: 300px;
+    }
+  
+    .header-text p {
+      font-size: 18px;
+    }
+  
+    .header-text h1 {
+      font-size: 30px;
+    }
+  }
+  
+  @media screen and (max-width: 387px) {
+    .header-text {
+      margin-top: 250px;
+    }
+  
+    .header-text h1 {
+      font-size: 28px;
+    }
+  }
+  
+  @media screen and (max-width: 364px) {
+    .header-text {
+      margin-top: 250px;
+    }
+  
+    .header-text p {
+      font-size: 16px;
+    }
+  
+    .header-text h1 {
+      font-size: 25px;
+    }
+  }
+  
+
     </style>
 </head>
 <body>
+    <!------------------------------ Navigation ------------------------------>
+    <div id="header">
+      <div class="container">
+        <nav>
+          <img src="https://i.ibb.co/jyzWsXF/Frame-19.png" class="logo">
+          <ul id="mobile-menu">
+            <li><a href="#header">Home<span class="color">.</span></a></li>
+            <li><a href="#about">About<span class="color">.</span></a></li>
+            <li><a href="#services">Services<span class="color">.</span></a></li>
+            <li><a href="#portfolio">Portfolio<span class="color">.</span></a></li>
+            <li><a href="#contact">Contact Me<span class="color">.</span></a></li>
+            <i class="fa-solid fa-xmark" onclick="closeMenu()"></i>
+          </ul>
+         <p onclick="openMenu()"><i class="fa-solid fa-bars" onclick="openMenue()"></i></p>
+        </nav>
+  
     <section class="author-archive">
         <div class="container">
           <h1>Some of my <a href="https://tutsplus.com/authors/george-martsoukos" target="_blank">Tuts+ Tutorials</a></h1>
@@ -247,7 +554,7 @@ footer span {
               <article>
                 <figure>
                   <a href="https://webdesign.tutsplus.com/tutorials/quick-tip-how-to-build-a-dead-simple-parallax-effect-with-css-javascript--cms-33061?_ga=2.146015156.1249101154.1555312171-2126893531.1553152868" target="_blank">
-                    <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/162656/parallax-pre.jpg" alt="">
+                    <img src="https://i.ibb.co/BqcVH86/alexander-shatov-PHH-0uw9-Qw-unsplash.jpg" alt="">
                   </a>
                   <figcaption>
                     <ol class="post-categories">
@@ -270,7 +577,7 @@ footer span {
               <article>
                 <figure>
                   <a href="https://webdesign.tutsplus.com/tutorials/how-to-build-a-portfolio-page-with-css-javascript--cms-32933?_ga=2.268974834.267848227.1555345574-242901505.1471790948" target="_blank">
-                    <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/162656/chart-pre.png" alt="">
+                    <img src="https://i.ibb.co/BqcVH86/alexander-shatov-PHH-0uw9-Qw-unsplash.jpg" alt="">
                   </a>
                   <figcaption>
                     <ol class="post-categories">
@@ -293,7 +600,7 @@ footer span {
               <article>
                 <figure>
                   <a href="https://webdesign.tutsplus.com/tutorials/dropdown-navigation-how-to-maintain-the-selected-option-on-page-load-on-a-wordpress-site--cms-32211?_ga=2.3551667.267848227.1555345574-242901505.1471790948" target="_blank">
-                    <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/162656/pre-wp.png" alt="">
+                    <img src="https://i.ibb.co/BqcVH86/alexander-shatov-PHH-0uw9-Qw-unsplash.jpg" alt="">
                   </a>
                   <figcaption>
                     <ol class="post-categories">
@@ -316,7 +623,7 @@ footer span {
               <article>
                 <figure>
                   <a href="https://webdesign.tutsplus.com/tutorials/dropdown-navigation-how-to-maintain-the-selected-option-on-page-load--cms-32210?_ga=2.192885033.267848227.1555345574-242901505.1471790948" target="_blank">
-                    <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/162656/load-pre.png" alt="">
+                    <img src="https://i.ibb.co/BqcVH86/alexander-shatov-PHH-0uw9-Qw-unsplash.jpg" alt="">
                   </a>
                   <figcaption>
                     <ol class="post-categories">
@@ -339,7 +646,7 @@ footer span {
               <article>
                 <figure>
                   <a href="https://webdesign.tutsplus.com/tutorials/quick-tip-how-to-enhance-a-page-with-css-animations--cms-32100?_ga=2.3551667.267848227.1555345574-242901505.1471790948" target="_blank">
-                    <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/162656/animations-pre.png" alt="">
+                    <img src="https://i.ibb.co/BqcVH86/alexander-shatov-PHH-0uw9-Qw-unsplash.jpg" alt="">
                   </a>
                   <figcaption>
                     <ol class="post-categories">
@@ -518,11 +825,36 @@ footer span {
           </ol>
         </div>
       </section>
-      <footer>
+      <!-- <footer>
         <div class="container">
-          <small>Made with <span>❤</span> by <a href="http://georgemartsoukos.com/" target="_blank">George Martsoukos</a>
-          </small>
+          <p>Copyright © 2025 <span class="color">F</span>atemeh<span class="color">.</span> NezhadLotfi | All rights reserved.</p>
         </div>
-      </footer>
+      </footer> -->
 </body>
+<script>var tabLinks = document.getElementsByClassName("tab-links");
+  var tabContents = document.getElementsByClassName("tab-contents");
+  
+  function openTab(tabName) {
+    for (let tabLink of tabLinks) {
+      tabLink.classList.remove("active-link");
+    }
+  
+    for (let tabContent of tabContents) {
+      tabContent.classList.remove("active-tab");
+    }
+  
+    event.currentTarget.classList.add("active-link");
+    document.getElementById(tabName).classList.add("active-tab");
+  }
+  
+  // ---------------- JS for Mobile Menu ------------------
+  var mobileMenu = document.getElementById("mobile-menu");
+  function openMenu() {
+    mobileMenu.style.right = "0px";
+  }
+  
+  function closeMenu() {
+    mobileMenu.style.right = "-400px";
+  }
+  </script>
 </html>
