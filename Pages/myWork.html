@@ -78,6 +78,7 @@ h1 a:hover {
 input[type="radio"] {
   position: absolute;
   left: -9999px;
+  
 }
 
 
@@ -117,7 +118,7 @@ input[type="radio"] {
 }
 
 .posts .post {
-  background: #ffa3a3;
+  background: #262626;
   border: 1px solid rgba(255, 255, 255, 0.1);
 }
 
@@ -158,6 +159,7 @@ input[type="radio"] {
   background: var(--green);
   color: var(--white);
 }
+
 
 /* FILTERING RULES
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
@@ -244,8 +246,8 @@ input[type="radio"] {
     color: black;
   }
   
-  .container {
-    padding: 20px 8%;
+   .container {
+    padding: 20px 8%; 
   }
   
   .sub-title {
@@ -340,7 +342,11 @@ input[type="radio"] {
     background: var(--secondary-color);
     color: var(--white);
     text-align: center;
-    position: sticky;
+    position:static;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+
     
   }
   
@@ -418,20 +424,14 @@ input[type="radio"] {
   
     .header-text {
       margin-top: 250px;
-      color: var(--white);
-
     }
   
     .header-text p {
       font-size: 25px;
-      color: var(--white);
-
     }
   
     .header-text h1 {
       font-size: 40px;
-          color: var(--white);
-
     }
   
   
@@ -513,16 +513,16 @@ input[type="radio"] {
         <nav>
           <img src="https://i.ibb.co/jyzWsXF/Frame-19.png" class="logo">
           <ul id="mobile-menu">
-            <li><a href="/index.html">Home<span class="color">.</span></a></li>
-            <li><a href="/index.html#about">About<span class="color">.</span></a></li>
-            <li><a href="/index.html#services">Services<span class="color">.</span></a></li>
+            <li><a href="index.html">Home<span class="color">.</span></a></li>
+            <li><a href="index.html/#about">About<span class="color">.</span></a></li>
+            <li><a href="index.html/#services">Services<span class="color">.</span></a></li>
             <li><a href="#portfolio">Portfolio<span class="color">.</span></a></li>
-            <li><a href="/index.html#contact">Contact Me<span class="color">.</span></a></li>
+            <li><a href="index.html/#contact">Contact Me<span class="color">.</span></a></li>
             <i class="fa-solid fa-xmark" onclick="closeMenu()"></i>
           </ul>
          <p onclick="openMenu()"><i class="fa-solid fa-bars" onclick="openMenue()"></i></p>
         </nav>
-  
+        </div>
     <section class="author-archive">
         <div class="container">
           <h1>Some of my <a href="https://tutsplus.com/authors/george-martsoukos" target="_blank">Tuts+ Tutorials</a></h1>
@@ -834,12 +834,11 @@ input[type="radio"] {
           </ol>
         </div>
       </section>
-      <section>
-   <footer>
+     <footer>
         <div class="container">
           <p>Copyright © 2025 <span class="color">F</span>atemeh<span class="color">.</span> NezhadLotfi | All rights reserved.</p>
         </div>
-      </footer> </section>
+      </footer>
 </body>
 <script>var tabLinks = document.getElementsByClassName("tab-links");
   var tabContents = document.getElementsByClassName("tab-contents");
