@@ -3,7 +3,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>First page</title>
+  <title>Coinest Project</title>
   <!-- add icon link -->
   <link rel="shortcut icon" type="image/x-icon" href="/img/Frame-19.ico" />
   
@@ -17,6 +17,65 @@
    <!-- Font Awsome Icons -->
    <script src="https://kit.fontawesome.com/2786bc3471.js" crossorigin="anonymous"></script> 
 <style>
+
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  height: 100vh;
+}
+
+.text {
+  font-size: 10vw;
+  letter-spacing: -.01em;
+  line-height: 100%;
+  margin: 0;
+  
+  width: 100%;
+  color: rgb(182, 182, 182, 0.2);
+  background: linear-gradient(to right, #b6b6b6, #b6b6b6) no-repeat;
+  -webkit-background-clip: text;
+  background-clip: text;
+  background-size: 0%;
+  transition: background-size cubic-bezier(.1,.5,.5,1) 0.5s;
+  
+
+  border-bottom: 1px solid #2F2B28;
+  
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  position: relative;
+}
+
+span {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: #4246ce;
+  color: #0D0D0D;
+  
+  clip-path: polygon(0 50%, 100% 50%, 100% 50%, 0 50%);
+  transform-origin: center;
+  transition: all cubic-bezier(.1,.5,.5,1) 0.4s;
+  
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.text:hover > span {
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+  /* new */
    @import url('https://fonts.googleapis.com/css2?family=PT+Mono&family=PT+Sans:wght@400;700&display=swap');
 
 /* === Grid and base layout === */
@@ -33,13 +92,14 @@ body {
   margin: 0;
   padding:  var(--body-pad-top) 45px;
   min-width: 350px;
-  grid: auto / 200px minmax(300px, 500px);
+  grid: auto / 200px minmax(250px,1000px);
   align-items: start;
-  justify-content: center;
+  justify-content: left;
   gap: 20px;
-  font: 16px/1.3 'PT Sans', sans-serif;
-  color: #333;
-  background: #edf2f4;
+  font: 16px/1.3 'Poppins', sans-serif;
+  color: #edf2f4;
+  background-color: #0D0D0D;
+
 }
 
 nav {
@@ -68,13 +128,13 @@ nav li > ul {
 
 nav a {
   display: inline-block;
-  color: #7f7f7f;
+  color: #545454;
   text-decoration: none;
   transition: all 300ms ease-in-out;
 }
   
 nav li.visible > a {
-  color: #222;
+  color: #ffe100;
   transform: translate(5px);
 }
 
@@ -124,7 +184,7 @@ h1 span,
 }
 
 article a {
-  color: #222;
+  color: #006eff;
   text-decoration-color: var(--highlight);
 }
 
@@ -138,9 +198,9 @@ article a:hover {
 code {
   margin: -2px;
   padding: 2px;
-  background: rgba(0,0,0,.05);
+  background: rgba(191, 235, 101, 0.05);
   font-family: 'PT Mono', monospace;
-  color: #333;
+  color: #fff87d;
 }
 
 /* === Adjustments === */
@@ -156,6 +216,167 @@ section:last-of-type,
 section:last-of-type p:last-of-type {
   margin-bottom: 0;
   padding-bottom: 0;
+}
+/* photo */
+.heading {
+  font-family: "Playfair Display", serif;
+}
+
+main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  height: calc(100vh - 5rem);
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding: 0 3.125rem;
+}
+
+.wrapper {
+  overflow: hidden;
+}
+
+.absolute-wrapper {
+  position: absolute;
+  overflow: hidden;
+  height: 100vh;
+  width: 60%;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.colored-backgrounds {
+  position: absolute;
+  height: inherit;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.colored-backgrounds div {
+  width: 100%;
+  height: 100%;
+  -webkit-box-flex: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+}
+
+
+
+.content h1 {
+  margin-bottom: 1rem;
+  font-size: 3.5rem;
+}
+
+.content p {
+  margin-bottom: 1.5rem;
+  font-family: open sans;
+}
+
+.content button {
+  border: none;
+  background-color: #7bcc3c;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  padding: 1rem 2.5rem;
+  cursor: pointer;
+}
+
+.content button:active {
+  -webkit-transform: scale(0.96);
+  transform: scale(0.96);
+}
+
+.images {
+  width: 700px;
+  height: 500px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.images .image {
+  height: 100%;
+  width: 100%;
+  -webkit-box-flex: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+}
+
+.image:nth-child(1) {
+  background: url("https://vikram-hegde.github.io/ui-animation/images/image1.png")
+    no-repeat 50% 50% / cover;
+}
+
+.image:nth-child(2) {
+  background: url("https://vikram-hegde.github.io/ui-animation/images/image2.png")
+    no-repeat 50% 50% / cover;
+}
+
+.image:nth-child(3) {
+  background: url("https://vikram-hegde.github.io/ui-animation/images/image3.png")
+    no-repeat 50% 50% / cover;
+}
+
+.image:nth-child(4) {
+  background: url("https://vikram-hegde.github.io/ui-animation/images/image4.png")
+    no-repeat 50% 50% / cover;
+}
+
+.navigation .right,
+.navigation .left {
+  height: 60px;
+  width: 60px;
+  border: 1px solid #333;
+  border-radius: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin-top: 1rem;
+  cursor: pointer;
+}
+
+.navigation .right:hover,
+.navigation .left:hover {
+  background-color: #333;
+  color: white;
+}
+
+.navigation .right:active,
+.navigation .left:active {
+  -webkit-transform: scale(0.96);
+  transform: scale(0.96);
+}
+
+.images,
+.colored-backgrounds {
+  -webkit-transition: -webkit-transform 0.35s
+    cubic-bezier(0.39, 0.575, 0.565, 1);
+  transition: -webkit-transform 0.35s cubic-bezier(0.39, 0.575, 0.565, 1);
+  transition: transform 0.35s cubic-bezier(0.39, 0.575, 0.565, 1);
+  transition: transform 0.35s cubic-bezier(0.39, 0.575, 0.565, 1),
+    -webkit-transform 0.35s cubic-bezier(0.39, 0.575, 0.565, 1);
+}
+
+.colored-backgrounds {
+  -webkit-transition-delay: 150ms;
+  transition-delay: 150ms;
 }
 
 </style>
@@ -199,7 +420,17 @@ section:last-of-type p:last-of-type {
     <article id="top">
       
       <div class="subheading">An intersectionObserver approach to</div>
-      <h1>Hakim's Progress Nav Concept</h1>
+      <h1>Hakim's Progress Nav Concept
+        <div class="container">
+          <h1 class="text">TEXT EFFECT<span>WOAH</span></h1>
+          <h1 class="text">GSAP<span>AND CLIPPING</span></h1>
+          <h1 class="text">CRAZYYY<span>CRAZYYY</span></h1>
+          <h1 class="text">HOVER ON ME<span><a href="https://stacksorted.com/text-effects/minh-pham" target="_blank">SOURCE</a></span></h1>
+          <h1 class="text">LIKE THIS?<span><a href="https://twitter.com/juxtopposed" target="_blank">LET'S CONNECT</a></span></h1>
+        </div>
+
+
+      </h1>
       
       <section id="intro">
         <h2>Intro</h2>
@@ -224,7 +455,51 @@ section:last-of-type p:last-of-type {
         <p>Etiam id ex dolor. Curabitur quis tellus vitae neque finibus suscipit. Donec vel nisl ac justo mattis molestie. Vivamus in interdum est. Fusce sed malesuada tellus. Suspendisse imperdiet condimentum sem in tristique. Donec faucibus dui non pharetra cursus. Praesent congue turpis leo, vitae porttitor elit fringilla vel. Phasellus ut aliquet augue. Donec egestas luctus placerat.</p>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus nisi nisl, pharetra et odio non, sollicitudin bibendum enim. Integer posuere, est et posuere feugiat, nisi nunc auctor nisi, eu tristique ipsum justo ut tellus. Phasellus molestie ultricies sodales. Nunc nec ligula placerat, vehicula orci a, tincidunt ante. Donec ac metus quis nunc cursus tincidunt.</p>
       <p>Vivamus sed ullamcorper ex. Suspendisse potenti. Nam sodales hendrerit enim, non fringilla mauris gravida maximus. Sed pharetra purus eget quam auctor luctus. Aenean arcu nulla, aliquam ut consectetur non, tincidunt eget sem. Aliquam tristique mattis urna, a posuere justo dapibus nec. Aenean non lacinia nisl. Aenean ac bibendum eros. Integer posuere enim tempor auctor venenatis. Etiam convallis nunc at eros ultrices, et elementum erat ultrices.</p>
-        <p>In aliquam maximus dui, nec iaculis nunc gravida et. Cras dapibus porta est, sed finibus arcu viverra in. Vivamus volutpat placerat urna, non varius sapien tempor sit amet. Cras quis dictum enim. Vestibulum ac rhoncus diam, non venenatis dolor. Curabitur ut velit tincidunt, pulvinar dolor sit amet, tincidunt arcu. Integer at ipsum eu ex blandit consectetur.</p>
+      <div class="absolute-wrapper">
+        <div class="colored-backgrounds">
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+        </div>
+      </div>
+      <main>
+        <!-- <div class="content">
+          <div class="heading">
+            <h1>Portrait Love</h1>
+            <p>
+              A portrait is a painting, photograph,<br />
+              sculpture, or other artistic representation<br />
+              of a person, in which the face and its<br />
+              expression is predominant.
+            </p>
+            <button type="button">View Portraits</button>
+          </div> -->
+        </div>
+        <div class="wrapper">
+          <div class="images">
+            <div class="image"></div>
+            <div class="image"></div>
+            <div class="image"></div>
+            <div class="image"></div>
+          </div>
+        </div>
+        <div class="navigation">
+          <div class="right">
+            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-right" width="26" height="26" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+              <path stroke="none" d="M0 0h24v24H0z" />
+              <polyline points="9 6 15 12 9 18" />
+            </svg>
+          </div>
+          <div class="left">
+            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-left" width="26" height="26" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+              <path stroke="none" d="M0 0h24v24H0z" />
+              <polyline points="15 6 9 12 15 18" />
+            </svg>
+          </div>
+        </div>
+      </main>
+      <p>In aliquam maximus dui, nec iaculis nunc gravida et. Cras dapibus porta est, sed finibus arcu viverra in. Vivamus volutpat placerat urna, non varius sapien tempor sit amet. Cras quis dictum enim. Vestibulum ac rhoncus diam, non venenatis dolor. Curabitur ut velit tincidunt, pulvinar dolor sit amet, tincidunt arcu. Integer at ipsum eu ex blandit consectetur.</p>
       </section>
       
       <section id="fourth">
@@ -388,5 +663,47 @@ drawPath();
 
 const observer = new IntersectionObserver(markVisibleSection);
 elementsToObserve.forEach(thisEl => observer.observe(thisEl));
+
+// Photo
+const navLeft = document.querySelector(".left");
+const navRight = document.querySelector(".right");
+
+const images = document.querySelector(".images");
+const colors = document.querySelector(".colored-backgrounds");
+
+let index = 0;
+
+function right() {
+  transform((index = index < 3 ? ++index : 0));
+}
+
+function left() {
+  transform((index = index > 0 ? --index : 3));
+}
+
+navLeft.addEventListener("click", left);
+navRight.addEventListener("click", right);
+
+function transform(index) {
+  images.style.transform = `translateX(-${index * 100}%)`;
+  colors.style.transform = `translateX(-${index * 100}%)`;
+}
+//new text
+gsap.registerPlugin(ScrollTrigger);
+
+const textElements = gsap.utils.toArray('.text');
+
+textElements.forEach(text => {
+  gsap.to(text, {
+    backgroundSize: '100%',
+    ease: 'none',
+    scrollTrigger: {
+      trigger: text,
+      start: 'center 80%',
+      end: 'center 20%',
+      scrub: true,
+    },
+  });
+});
    </script>
 </html>
