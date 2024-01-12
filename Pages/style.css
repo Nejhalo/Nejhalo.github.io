@@ -1089,7 +1089,7 @@ body .socials > a:hover {
 
 .social li a{
 	display: inline-block;
-	float: left;
+	/* float: left;  commend delete kon*/
 	width: 40px;
 	height: 40px;
 	margin-right: 1rem;
