@@ -24,6 +24,7 @@ function openMenu() {
 function closeMenu() {
   mobileMenu.style.right = "-400px";
 }
+
 //-----------------darkmode------------------------------------
 //----------------let checkbox =  document.getElementById('checkbox');
 
@@ -85,31 +86,31 @@ document.addEventListener("DOMContentLoaded", function() { // On DOM Load initia
 
 
 //-----------------txt-----------------------//
-var sliderCounter = 0;
-var sliderContent = [
-  "Web Development",
-  "WordPress Development",
-  "App Development",
-  "Plugin Development",
+var ProposalCounter = 0;
+var ProposalContent = [
+  "Web Proposalment",
+  "3D Proposalment",
+  "App Proposalment",
+  "Plugin Proposalment",
   "CRM Integrations"
 ];
-var slider = document.querySelector("#slider");
-var sliderValue = document.querySelector("#sliderValue");
+var Proposal = document.querySelector("#Proposal");
+var ProposalValue = document.querySelector("#ProposalValue");
 
 function slide() {
-  if (sliderCounter >= sliderContent.length) {
-    sliderCounter = 0;
+  if (ProposalCounter >= ProposalContent.length) {
+    ProposalCounter = 0;
   }
 
-  sliderValue.innerHTML = "";
+  ProposalValue.innerHTML = "";
   
-  sliderValue.classList.remove("holder-animation");
-  void sliderValue.offsetWidth;
-  sliderValue.classList.add("holder-animation");
+  ProposalValue.classList.remove("holder-animation");
+  void ProposalValue.offsetWidth;
+  ProposalValue.classList.add("holder-animation");
   
-  for (i = 0; i < sliderContent[sliderCounter].length; i++) {
+  for (i = 0; i < ProposalContent[ProposalCounter].length; i++) {
     let letterDiv = document.createElement("div");
-    letterDiv.innerHTML = sliderContent[sliderCounter][i];
+    letterDiv.innerHTML = ProposalContent[ProposalCounter][i];
 
     if (letterDiv.innerHTML == " ") {
       letterDiv.innerHTML = "&nbsp;";
@@ -117,16 +118,16 @@ function slide() {
     letterDiv.classList.add("start");
     letterDiv.classList.add("animation");
     letterDiv.style.animationDelay = i / 10 + "s";
-    sliderValue.appendChild(letterDiv);
+    ProposalValue.appendChild(letterDiv);
   }
 
-  sliderCounter++;
+  ProposalCounter++;
 }
 
 slide();
 setInterval(slide, 4000);
 
-  // JavaScript to update the cursor position
+  // UI to update the cursor position
   document.addEventListener('mousemove', (e) => {
     const cursor = document.getElementById('cursor');
     cursor.style.left = e.clientX + 'px';
@@ -153,58 +154,3 @@ function topFunction() {
   document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
 }
 
-
-//cursor is
-const letterSpacing = getComputedStyle(
-  document.querySelector(":root")
-).getPropertyValue("--letter-spacing-x");
-
-var cursor = document.querySelector(".cursor");
-var cursorLink = document.querySelector(".link");
-var cursorIcon = document.querySelector(".icon");
-
-var iconMap = {
-  Home: "fa-house",
-  Services: "fa-bell",
-  About: "fa-user",
-  Contact: "fa-envelope",
-  Portfolio: "fa-bag",
-  
-};
-
-document.addEventListener("mousemove", (event) => {
-  cursor.style.left = event.clientX - cursor.offsetWidth / 2 + "px";
-  cursor.style.top = event.clientY - cursor.offsetHeight / 2 + "px";
-
-  cursor.classList.remove("active");
-  cursorLink.innerHTML = "";
-  cursorIcon.innerHTML = "";
-
-  let elements = document.elementsFromPoint(event.clientX, event.clientY);
-  elements.forEach((elem) => {
-    if (elem.tagName == "A") {
-      cursor.classList.add("active");
-
-      elem.innerHTML.split("").forEach((letter, i) => {
-        var circleLetter = document.createElement("div");
-        circleLetter.classList.add("circle-letter");
-        circleLetter.innerHTML = letter;
-        circleLetter.style.transform = "rotate(" + i * letterSpacing + "deg)";
-
-        var circleLetterBottom = document.createElement("div");
-        circleLetterBottom.classList.add("circle-letter-bottom");
-        circleLetterBottom.innerHTML = letter;
-        circleLetter.appendChild(circleLetterBottom);
-
-        cursorLink.appendChild(circleLetter);
-      });
-
-      if (iconMap[elem.innerHTML]) {
-        var circleIcon = document.createElement("i");
-        circleIcon.classList.add("fa");
-        circleIcon.classList.add(iconMap[elem.innerHTML]);
-        cursorIcon.appendChild(circleIcon);
-      }
-    }
-  });
-});
