@@ -25,7 +25,7 @@
   
   .skill-set li:hover
   {
-      background:#fbff00;
+      background:#e0e401;
       color: #262626;
   }
   
@@ -160,7 +160,7 @@
   
   .skill-set li
   {
-      background:rgba(255, 242, 3, 0.52);
+      background:rgb(255, 242, 3);
       border-radius:5px;
       color:#d6d6d6;
       display:inline-block;
