@@ -29,7 +29,7 @@ body {
   background-position: center;
   background-size: cover;
   background-attachment: fixed;
-  position: relative; 
+  position: relative; }
 
 html {
   scroll-behavior: smooth;
