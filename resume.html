@@ -78,145 +78,137 @@
 					<button class="btn" type="button" data-action="collapse">Collapse All</button>
 				</div>
 
-
-
-				<div class="timeline__item">
-					<div class="timeline__item-header">
-						<button class="timeline__arrow" type="button" id="item1" aria-labelledby="item1-name" aria-expanded="false" aria-controls="item1-ctrld" aria-haspopup="true" data-item="1">
-							<svg class="timeline__arrow-icon" viewBox="0 0 24 24" width="24px" height="24px">
-								<use href="#arrow" />
-							</svg>
-						</button>
-						<span class="timeline__dot"></span>
-						<span id="item1-name" class="timeline__meta">
-							<time class="timeline__date" datetime="1970-01-01">September , 2014</time><br>
-							<strong class="timeline__title">Vocational School</strong>
-						</span>
+				<svg display="none">
+					<symbol id="arrow">
+						<polyline points="7 10,12 15,17 10" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" />
+					</symbol>
+				</svg>
+				<span></span>
+				<h1 style="line-height: 3.4;">A Brief History of Unix Time<span class="dot_style">.</span></h1> 
+				<div id="timeline" class="timeline">
+					<div class="btn-group">
+						<button class="btn" type="button" data-action="expand">Expand All</button>
+						<button class="btn" type="button" data-action="collapse">Collapse All</button>
 					</div>
-					<div class="timeline__item-body" id="item1-ctrld" role="region" aria-labelledby="item1" aria-hidden="true">
-						<div class="timeline__item-body-content">
-							<p class="timeline__item-p">From 2014 to 2017, I pursued a major in computers during high school.</p>
-								
+					<div class="timeline__item">
+						<div class="timeline__item-header">
+							<button class="timeline__arrow" type="button" id="item1" aria-labelledby="item1-name" aria-expanded="false" aria-controls="item1-ctrld" aria-haspopup="true" data-item="1">
+								<svg class="timeline__arrow-icon" viewBox="0 0 24 24" width="24px" height="24px">
+									<use href="#arrow" />
+								</svg>
+							</button>
+							<span class="timeline__dot"></span>
+							<span id="item1-name" class="timeline__meta">
+								<time class="timeline__date" datetime="1970-01-01">September , 2014</time><br>
+								<strong class="timeline__title">Vocational School</strong>
+							</span>
+						</div>
+						<div class="timeline__item-body" id="item1-ctrld" role="region" aria-labelledby="item1" aria-hidden="true">
+							<div class="timeline__item-body-content">
+								<p class="timeline__item-p">From 2015 to 2017, I pursued a major in computers during high school.</p>
+									
+							</div>
 						</div>
 					</div>
-				</div>
-
-
-
-
-				<div class="timeline__item">
-					<div class="timeline__item-header">
-						<button class="timeline__arrow" type="button" id="item2" aria-labelledby="item2-name" aria-expanded="false" aria-controls="item2-ctrld" aria-haspopup="true" data-item="2">
-							<svg class="timeline__arrow-icon" viewBox="0 0 24 24" width="24px" height="24px">
-								<use href="#arrow" />
-							</svg>
-						</button>
-						<span class="timeline__dot"></span>
-						<span id="item2-name" class="timeline__meta">
-							<time class="timeline__date" datetime="1973-10-17">September , 2017</time><br>
-							<strong class="timeline__title">Associate</strong>
-						</span>
-					</div>
-					<div class="timeline__item-body" id="item2-ctrld" role="region" aria-labelledby="item2" aria-hidden="true">
-						<div class="timeline__item-body-content">
-							<p class="timeline__item-p">I successfully completed the entrance examination and secured the 37th rank to enroll for an associate program. I have successfully earned my degree through dedicated efforts and hard work.
-
-							</p>
+					<div class="timeline__item">
+						<div class="timeline__item-header">
+							<button class="timeline__arrow" type="button" id="item2" aria-labelledby="item2-name" aria-expanded="false" aria-controls="item2-ctrld" aria-haspopup="true" data-item="2">
+								<svg class="timeline__arrow-icon" viewBox="0 0 24 24" width="24px" height="24px">
+									<use href="#arrow" />
+								</svg>
+							</button>
+							<span class="timeline__dot"></span>
+							<span id="item2-name" class="timeline__meta">
+								<time class="timeline__date" datetime="1973-10-17">September , 2017</time><br>
+										<strong class="timeline__title">Associate</strong>
+							</span>
+						</div>
+						<div class="timeline__item-body" id="item2-ctrld" role="region" aria-labelledby="item2" aria-hidden="true">
+							<div class="timeline__item-body-content">
+								<p class="timeline__item-p">I successfully completed the entrance examination and secured the 37th rank to enroll for an associate program. I have successfully earned my degree through dedicated efforts and hard work.</p>
+							</div>
 						</div>
 					</div>
-				</div>
-
-
-				<div class="timeline__item">
-					<div class="timeline__item-header">
-						<button class="timeline__arrow" type="button" id="item3" aria-labelledby="item3-name" aria-expanded="false" aria-controls="item3-ctrld" aria-haspopup="true" data-item="3">
-							<svg class="timeline__arrow-icon" viewBox="0 0 24 24" width="24px" height="24px">
-								<use href="#arrow" />
-							</svg>
-						</button>
-						<span class="timeline__dot"></span>
-						<span id="item3-name" class="timeline__meta">
-							<time class="timeline__date" datetime="2001-09-09">September , 2019</time><br>
-							<strong class="timeline__title">Bachelor</strong>
-						</span>
-					</div>
-					<div class="timeline__item-body" id="item3-ctrld" role="region" aria-labelledby="item3" aria-hidden="true">
-						<div class="timeline__item-body-content">
-							<p class="timeline__item-p">I passed the entrance exam and ranked 196th to earn my associate degree.
-
-							</p>
+					<div class="timeline__item">
+						<div class="timeline__item-header">
+							<button class="timeline__arrow" type="button" id="item3" aria-labelledby="item3-name" aria-expanded="false" aria-controls="item3-ctrld" aria-haspopup="true" data-item="3">
+								<svg class="timeline__arrow-icon" viewBox="0 0 24 24" width="24px" height="24px">
+									<use href="#arrow" />
+								</svg>
+							</button>
+							<span class="timeline__dot"></span>
+							<span id="item3-name" class="timeline__meta">
+								<time class="timeline__date" datetime="2001-09-09">September , 2019</time><br>
+								<strong class="timeline__title">Bachelor</strong>
+							</span>
+						</div>
+						<div class="timeline__item-body" id="item3-ctrld" role="region" aria-labelledby="item3" aria-hidden="true">
+							<div class="timeline__item-body-content">
+								<p class="timeline__item-p">I passed the entrance exam and ranked 196th to earn my associate degree.</p>
+							</div>
 						</div>
 					</div>
-				</div>
-
-
-				<div class="timeline__item">
-					<div class="timeline__item-header">
-						<button class="timeline__arrow" type="button" id="item4" aria-labelledby="item4-name" aria-expanded="false" aria-controls="item4-ctrld" aria-haspopup="true" data-item="4">
-							<svg class="timeline__arrow-icon" viewBox="0 0 24 24" width="24px" height="24px">
-								<use href="#arrow" />
-							</svg>
-						</button>
-						<span class="timeline__dot"></span>
-						<span id="item4-name" class="timeline__meta">
-							<time class="timeline__date" datetime="2009-02-13">September , 2021</time><br>
-							<strong class="timeline__title">Presentation of engineering thesis</strong>
-						</span>
-					</div>
-					<div class="timeline__item-body" id="item4-ctrld" role="region" aria-labelledby="item4" aria-hidden="true">
-						<div class="timeline__item-body-content">
-							<p class="timeline__item-p">I am happy to inform you that I have passed my thesis on the TTCU website with a perfect score of 4/4.
-							</p>
+					<div class="timeline__item">
+						<div class="timeline__item-header">
+							<button class="timeline__arrow" type="button" id="item4" aria-labelledby="item4-name" aria-expanded="false" aria-controls="item4-ctrld" aria-haspopup="true" data-item="4">
+								<svg class="timeline__arrow-icon" viewBox="0 0 24 24" width="24px" height="24px">
+									<use href="#arrow" />
+								</svg>
+							</button>
+							<span class="timeline__dot"></span>
+							<span id="item4-name" class="timeline__meta">
+								<time class="timeline__date" datetime="2009-02-13">September , 2021</time><br>
+								<strong class="timeline__title">Presentation of engineering thesis</strong>
+							</span>
+						</div>
+						<div class="timeline__item-body" id="item4-ctrld" role="region" aria-labelledby="item4" aria-hidden="true">
+							<div class="timeline__item-body-content">
+								<p class="timeline__item-p">I am happy to inform you that I have passed my thesis on the TTCU website with a perfect score of 4/4.
+								</p>
+							</div>
 						</div>
 					</div>
-				</div>
-
-
-
-				<div class="timeline__item">
-					<div class="timeline__item-header">
-						<button class="timeline__arrow" type="button" id="item5" aria-labelledby="item5-name" aria-expanded="false" aria-controls="item5-ctrld" aria-haspopup="true" data-item="5">
-							<svg class="timeline__arrow-icon" viewBox="0 0 24 24" width="24px" height="24px">
-								<use href="#arrow" />
-							</svg>
-						</button>
-						<span class="timeline__dot"></span>
-						<span id="item4-name" class="timeline__meta">
-							<time class="timeline__date" datetime="2009-02-13">Autumn , 2021</time><br>
-							<strong class="timeline__title">Learning Product Design</strong>
-						</span>
-					</div>
-					<div class="timeline__item-body" id="item4-ctrld" role="region" aria-labelledby="item4" aria-hidden="true">
-						<div class="timeline__item-body-content">
-							<p class="timeline__item-p"> I completed an online course in Product Design, which took 66 hours, and I received a score of 95/100 on the problem sets and final project. 
-							</p>
+					<div class="timeline__item">
+						<div class="timeline__item-header">
+							<button class="timeline__arrow" type="button" id="item5" aria-labelledby="item5-name" aria-expanded="false" aria-controls="item5-ctrld" aria-haspopup="true" data-item="5">
+								<svg class="timeline__arrow-icon" viewBox="0 0 24 24" width="24px" height="24px">
+									<use href="#arrow" />
+								</svg>
+							</button>
+							<span class="timeline__dot"></span>
+							<span id="item5-name" class="timeline__meta">
+								<time class="timeline__date" datetime="2009-02-13">Autumn , 2021</time><br>
+								<strong class="timeline__title">Learning Product Design</strong>
+							</span>
+						</div>
+						<div class="timeline__item-body" id="item5-ctrld" role="region" aria-labelledby="item5" aria-hidden="true">
+							<div class="timeline__item-body-content">
+										<p class="timeline__item-p"> I completed an online course in Product Design, which took 66 hours, and I received a score of 95/100 on the problem sets and final project. 
+							</div>
 						</div>
 					</div>
-				</div>
-
-
-				<!-- <div class="timeline__item">
-					<div class="timeline__item-header">
-						<button class="timeline__arrow" type="button" id="item5" aria-labelledby="item5-name" aria-expanded="false" aria-controls="item5-ctrld" aria-haspopup="true" data-item="5">
-							<svg class="timeline__arrow-icon" viewBox="0 0 24 24" width="24px" height="24px">
-								<use href="#arrow" />
-							</svg>
-						</button>
-						<span class="timeline__dot"></span>
-						<span id="item5-name" class="timeline__meta">
-							<time class="timeline__date" datetime="2033-05-18">July, 2022</time><br>
-							<strong class="timeline__title">Freelanceing</strong>
-						</span>
-					</div>
-					<div class="timeline__item-body" id="item5-ctrld" role="region" aria-labelledby="item5" aria-hidden="true">
-						<div class="timeline__item-body-content">
+					<div class="timeline__item">
+						<div class="timeline__item-header">
+							<button class="timeline__arrow" type="button" id="item6" aria-labelledby="item6-name" aria-expanded="false" aria-controls="item6-ctrld" aria-haspopup="true" data-item="6">
+								<svg class="timeline__arrow-icon" viewBox="0 0 24 24" width="24px" height="24px">
+									<use href="#arrow" />
+								</svg>
+							</button>
+							<span class="timeline__dot"></span>
+							<span id="item6-name" class="timeline__meta">
+								<time class="timeline__date" datetime="2033-05-18">July, 2022</time><br>
+								<strong class="timeline__title">Learning Product Design</strong>
+							</span>
+						</div>
+						<div class="timeline__item-body" id="item6-ctrld" role="region" aria-labelledby="item6" aria-hidden="true">
+							<div class="timeline__item-body-content">
 							<p class="timeline__item-p">"As a  UI/UX designer, I took the lead in designing the BamaDecore project. My expertise and creativity allowed me to craft a user-friendly and visually appealing interface that will surely enhance the user experience. The result is a project that is not only functional but aesthetically pleasing as well."
-							</p>
+								</p> 
+								</div>
 						</div>
 					</div>
-				</div> -->
-
-
+				</div>
+			
 				<div class="timeline__item">
 					<div class="timeline__item-header">
 						<button class="timeline__arrow" type="button" id="item6" aria-labelledby="item6-name" aria-expanded="false" aria-controls="item6-ctrld" aria-haspopup="true" data-item="6">
@@ -226,25 +218,113 @@
 						</button>
 						<span class="timeline__dot"></span>
 						<span id="item6-name" class="timeline__meta">
-							<time class="timeline__date" datetime="2038-01-19">July, 2023</time><br>
-							<strong class="timeline__title">TOEFL / Coursera</strong>
+							<time class="timeline__date" datetime="2033-05-18">July, 2022</time><br>
+							<strong class="timeline__title">Freelanceing</strong>
 						</span>
 					</div>
 					<div class="timeline__item-body" id="item6-ctrld" role="region" aria-labelledby="item6" aria-hidden="true">
 						<div class="timeline__item-body-content">
-							<p class="timeline__item-p">"I have started taking my English studies very seriously because of the upcoming TOEFL exam."
-							</p>
-						</div>
+						<p class="timeline__item-p">"As a  UI/UX designer, I took the lead in designing the BamaDecore project. My expertise and creativity allowed me to craft a user-friendly and visually appealing interface that will surely enhance the user experience. The result is a project that is not only functional but aesthetically pleasing as well."
+							</p> 
+							</div>
 					</div>
 				</div>
 			</div>
-
+			
 		  </section>
-	
+	<!--  -->
 		  <section>
 			<div class="accordion-item">
 				<input type="checkbox" id="accordion1">
 				<label for="accordion1" class="accordion-item-title"><span class="icon"></span> What is SEO, and why is it important for online businesses?</label>
+				<div class="accordion-item-desc">SEO, or Search Engine Optimization, is the practice of optimizing a website to improve its visibility on search engines like Google. It involves various techniques to enhance a site's ranking in search results. SEO is crucial for online businesses as it helps drive organic traffic, increases visibility, and ultimately leads to higher conversions.</div>
+			</div>
+		
+			<div class="accordion-item">
+				<input type="checkbox" id="accordion2">
+				<label for="accordion2" class="accordion-item-title"><span class="icon"></span>How long does it take to see results from SEO efforts?</label>
+				<div class="accordion-item-desc">The timeline for seeing results from SEO can vary based on several factors, such as the competitiveness of keywords, the current state of the website, and the effectiveness of the SEO strategy. Generally, it may take several weeks to months before noticeable improvements occur. However, long-term commitment to SEO is essential for sustained success.</div>
+			</div>
+		
+			<div class="accordion-item">
+				<input type="checkbox" id="accordion3">
+				<label for="accordion3" class="accordion-item-title"><span class="icon"></span>What are the key components of a successful SEO strategy?</label>
+				<div class="accordion-item-desc">A successful SEO strategy involves various components, including keyword research, on-page optimization, quality content creation, link building, technical SEO, and user experience optimization. These elements work together to improve a website's relevance and authority in the eyes of search engines.</div>
+			</div>
+		
+			<div class="accordion-item">
+				<input type="checkbox" id="accordion4">
+				<label for="accordion4" class="accordion-item-title"><span class="icon"></span>How does mobile optimization impact SEO?</label>
+				<div class="accordion-item-desc">Mobile optimization is crucial for SEO because search engines prioritize mobile-friendly websites. With the increasing use of smartphones, search engines like Google consider mobile responsiveness as a ranking factor. Websites that provide a seamless experience on mobile devices are more likely to rank higher in search results.</div>
+			</div>
+		
+			<div class="accordion-item">
+				<input type="checkbox" id="accordion5">
+				<label for="accordion5" class="accordion-item-title"><span class="icon"></span>What is the role of backlinks in SEO, and how can they be acquired?</label>
+				<div class="accordion-item-desc">Backlinks, or inbound links from other websites to yours, play a significant role in SEO. They are considered a vote of confidence and can improve a site's authority. Quality over quantity is crucial when acquiring backlinks. Strategies for obtaining backlinks include creating high-quality content, guest posting, reaching out to industry influencers, and participating in community activities. It's important to focus on natural and ethical link-building practices.</div>
+			</div>
+		<!-- d -->
+
+	
+
+	<div class="timeline__item">
+		<div class="timeline__item-header">
+			<button class="timeline__arrow" type="button" id="item6" aria-labelledby="item6-name" aria-expanded="false" aria-controls="item6-ctrld" aria-haspopup="true" data-item="6">
+				<svg class="timeline__arrow-icon" viewBox="0 0 24 24" width="24px" height="24px">
+					<use href="#arrow" />
+				</svg>
+			</button>
+			<span class="timeline__dot"></span>
+			<span id="item6-name" class="timeline__meta">
+				<time class="timeline__date" datetime="2038-01-19">July, 2023</time><br>
+				<strong class="timeline__title">TOEFL / Coursera</strong>
+			</span>
+		</div>
+		<div class="timeline__item-body" id="item6-ctrld" role="region" aria-labelledby="item6" aria-hidden="true">
+			<div class="timeline__item-body-content">
+				<p class="timeline__item-p">"I have started taking my English studies very seriously because of the upcoming TOEFL exam."
+				</p>
+			</div>
+		</div>
+	</div>
+</div>
+  </section>
+
+  <section>
+	<div class="accordion-item">
+		<input type="checkbox" id="accordion1">
+		<label for="accordion1" class="accordion-item-title"><span class="icon"></span>What is SEO, and why is it important for online businesses?</label>
+		<div class="accordion-item-desc">SEO, or Search Engine Optimization, is the practice of optimizing a website to improve its visibility on search engines like Google. It involves various techniques to enhance a site's ranking in search results. SEO is crucial for online businesses as it helps drive organic traffic, increases visibility, and ultimately leads to higher conversions.</div>
+	</div>
+
+	<div class="accordion-item">
+		<input type="checkbox" id="accordion2">
+		<label for="accordion2" class="accordion-item-title"><span class="icon"></span>How long does it take to see results from SEO efforts?</label>
+		<div class="accordion-item-desc">The timeline for seeing results from SEO can vary based on several factors, such as the competitiveness of keywords, the current state of the website, and the effectiveness of the SEO strategy. Generally, it may take several weeks to months before noticeable improvements occur. However, long-term commitment to SEO is essential for sustained success.</div>
+	</div>
+
+	<div class="accordion-item">
+		<input type="checkbox" id="accordion3">
+		<label for="accordion3" class="accordion-item-title"><span class="icon"></span>What are the key components of a successful SEO strategy?</label>
+		<div class="accordion-item-desc">A successful SEO strategy involves various components, including keyword research, on-page optimization, quality content creation, link building, technical SEO, and user experience optimization. These elements work together to improve a website's relevance and authority in the eyes of search engines.</div>
+	</div>
+
+	<div class="accordion-item">
+		<input type="checkbox" id="accordion4">
+		<label for="accordion4" class="accordion-item-title"><span class="icon"></span>How does mobile optimization impact SEO?</label>
+		<div class="accordion-item-desc">Mobile optimization is crucial for SEO because search engines prioritize mobile-friendly websites. With the increasing use of smartphones, search engines like Google consider mobile responsiveness as a ranking factor. Websites that provide a seamless experience on mobile devices are more likely to rank higher in search results.</div>
+	</div>
+
+	<div class="accordion-item">
+		<input type="checkbox" id="accordion5">
+		<label for="accordion5" class="accordion-item-title"><span class="icon"></span>What is the role of backlinks in SEO, and how can they be acquired?</label>
+		<div class="accordion-item-desc">Backlinks, or inbound links from other websites to yours, play a significant role in SEO. They are considered a vote of confidence and can improve a site's authority. Quality over quantity is crucial when acquiring backlinks. Strategies for obtaining backlinks include creating high-quality content, guest posting, reaching out to industry influencers, and participating in community activities. It's important to focus on natural and ethical link-building practices.</div>
+	</div>
+
+		  <section>
+			<div class="accordion-item">
+				<input type="checkbox" id="accordion1">
+				<label for="accordion1" class="accordion-item-title"><span class="icon"></span>What is SEO, and why is it important for online businesses?</label>
 				<div class="accordion-item-desc">SEO, or Search Engine Optimization, is the practice of optimizing a website to improve its visibility on search engines like Google. It involves various techniques to enhance a site's ranking in search results. SEO is crucial for online businesses as it helps drive organic traffic, increases visibility, and ultimately leads to higher conversions.</div>
 			</div>
 		
