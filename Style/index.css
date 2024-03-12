@@ -35,6 +35,8 @@ html {
   background-size: cover;
   background-attachment: fixed;
   position: relative; 
+  width: 100%;
+  height: auto;
 }
 
 /* ------------------- Utility Classes -------------------*/
