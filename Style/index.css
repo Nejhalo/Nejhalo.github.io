@@ -23,19 +23,12 @@ body {
     overflow-x: hidden; /* Hide horizontal scrollbar */
   }
 
-#header{
-  background-image: url("https://i.ibb.co/jHTHTJx/alexander-shatov-PHH-0uw9-Qw-unsplash.jpg");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  background-attachment: fixed;
-  position: relative; }
 
 html {
   scroll-behavior: smooth;
 }
 
-/* #header {
+#header {
   background-image: url("https://i.ibb.co/tx18hPM/alexander-shatov-PHH-0uw9-Qw-unsplash.jpg");
   background-repeat: no-repeat;
   background-position: center;
@@ -43,7 +36,7 @@ html {
   background-attachment: fixed;
   position: relative; 
 
-} */
+}
 
 /* ------------------- Utility Classes -------------------*/
 .color {
@@ -463,16 +456,13 @@ footer {
     color: black;
   }
 
-  /* #header {
+   #header {
     background-image: url("https://i.ibb.co/jHTHTJx/alexander-shatov-PHH-0uw9-Qw-unsplash.jpg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
     background-attachment: fixed;
-width: 100%;
-height: auto;
-    
-  } */
+  } 
 
   nav ul {
     position: absolute;
