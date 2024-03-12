@@ -19,7 +19,10 @@
 body {
   background-color: #101113;
   color: white;
-}
+    /* overflow-y: hidden; Hide vertical scrollbar */
+    overflow-x: hidden; /* Hide horizontal scrollbar */
+  }
+
 
 html {
   scroll-behavior: smooth;
