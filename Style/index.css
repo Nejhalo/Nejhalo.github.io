@@ -26,14 +26,12 @@ html {
 }
 
 #header {
-  background-image: url("https://i.ibb.co/tx18hPM/alexander-shatov-PHH-0uw9-Qw-unsplash.jpg");
-  /* background-repeat: no-repeat;
+  /* background-image: url("https://i.ibb.co/tx18hPM/alexander-shatov-PHH-0uw9-Qw-unsplash.jpg"); */
+  background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  background-attachment: fixed; */
-  width: 100%;
-  height: auto;
-  /* position: relative; */
+  background-attachment: fixed;
+  position: relative; 
 }
 
 /* ------------------- Utility Classes -------------------*/
