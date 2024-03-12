@@ -10,6 +10,15 @@
   
   }
   
+  :root {
+    --primary-color: #ffe100;
+    --secondary-color: #262626;
+  }
+  
+  ::selection {
+    background-color: var(--primary-color);
+    color: rgb(255, 255, 255);
+  } 
   body
   {
       -webkit-font-smoothing:antialiased;
