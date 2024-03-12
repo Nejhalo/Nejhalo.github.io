@@ -23,6 +23,14 @@ body {
     overflow-x: hidden; /* Hide horizontal scrollbar */
   }
 
+#header{
+  background-image: url("https://i.ibb.co/jHTHTJx/alexander-shatov-PHH-0uw9-Qw-unsplash.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+
+width: 100%;
+height: auto;
+}
 
 html {
   scroll-behavior: smooth;
@@ -456,7 +464,7 @@ footer {
     color: black;
   }
 
-  #header {
+  /* #header {
     background-image: url("https://i.ibb.co/jHTHTJx/alexander-shatov-PHH-0uw9-Qw-unsplash.jpg");
     background-repeat: no-repeat;
     background-position: center;
@@ -465,7 +473,7 @@ footer {
 width: 100%;
 height: auto;
     
-  }
+  } */
 
   nav ul {
     position: absolute;
