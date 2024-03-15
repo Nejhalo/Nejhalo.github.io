@@ -10,15 +10,6 @@
   
   }
   
-  :root {
-    --primary-color: #ffd000;
-    --secondary-color: #262626;
-  }
-  
-  ::selection {
-    background-color: var(--primary-color);
-    color: rgb(0, 0, 0);
-  } 
   body
   {
       -webkit-font-smoothing:antialiased;
@@ -34,8 +25,8 @@
   
   .skill-set li:hover
   {
-    color:rgba(255, 255, 0, 0.886);
-    color: #262626;
+      background:#fbff00;
+      color: #262626;
   }
   
   h1
@@ -85,7 +76,7 @@
   
   .me-img
   {
-      background:url(https://i.ibb.co/K6jMZxM/IMAGE-2024-03-09-08-24-26.jpg) no-repeat center center ;
+      background:url(https://media-exp1.licdn.com/dms/image/C4E03AQGnLq_IB_mf8Q/profile-displayphoto-shrink_400_400/0/1631022739752?e=1648684800&v=beta&t=eICUjHeH_g9GQEItmEMK1j2gCADwqfjrlccSD_5za58) no-repeat center center ;
       background-size:100%;
     background-position:0px;
       border-radius:100%;
@@ -111,8 +102,8 @@
   
   .name-hero h1 em
   {
-    color:rgb(255, 255, 0);
-    font-style:normal;
+      color:rgb(255, 234, 0);
+      font-style:normal;
       font-weight:700;
   }
   
@@ -169,8 +160,8 @@
   
   .skill-set li
   {
-    color:rgb(255, 255, 0);
-    border-radius:5px;
+      background:rgba(255, 242, 3, 0.52);
+      border-radius:5px;
       color:#d6d6d6;
       display:inline-block;
       list-style:none;
