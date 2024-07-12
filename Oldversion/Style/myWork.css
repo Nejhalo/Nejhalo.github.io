@@ -3,26 +3,14 @@
 :root {
     --black: #3a3a3a;
     --white: #ffffff;
-    --green: #ffea00;
+    --green: #cbc646;
   }
   
-  ::selection {
-    background-color: var(--primary-color);
-    color: rgb(0, 0, 0);
-  }
-
-    
-  :root {
-    --primary-color: rgb(182, 172, 111);
-    --secondary-color: #262626;
-  }
-  
-
   * {
     margin: 0;
     padding: 0;
       box-sizing: border-box;
-      font-family: "Poppins";
+      font-family: "Poppins", sans-serif;
       box-sizing: border-box;
   }
   
@@ -65,7 +53,7 @@
   
   h1 a:hover {
     background: var(--green);
-    color: var(--black);
+    color: var(--white);
   }
   
   input[type="radio"] {
@@ -98,7 +86,7 @@
   
   .filters label:hover {
     background: var(--green);
-    color: var(--black);
+    color: var(--white);
   }
   
   
@@ -152,7 +140,7 @@
   
   .posts .post-categories a:hover {
     background: var(--green);
-    color: var(--black);
+    color: var(--white);
   }
   
   
@@ -166,7 +154,7 @@
   [value="Proposal"]:checked ~ .filters [for="Proposal"],
   [value="Develop"]:checked ~ .filters [for="Develop"] {
     background: var(--green);
-    color: var(--black);
+    color: var(--white);
   }
   
   [value="All"]:checked ~ .posts [data-category] {
@@ -217,7 +205,16 @@
       scroll-behavior: smooth;
     }
     
-
+    #header {
+      background-image: url("/");
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+      background-attachment: fixed;
+      width: 100%;
+      height: 100vh;
+      position: relative;
+    }
     
     /* ------------------- Utility Classes -------------------*/
     .color {

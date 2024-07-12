@@ -2,55 +2,36 @@
 *, *:before, *:after {
     -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box;
    }
-
-    :root {
-        --primary-color: #b5c4fe;
-        --secondary-color: #a5a5a5;
-  }
-
-   ::selection {
-    background-color: var(--primary-color);
-    color: rgb(0, 0, 0);
-  }
-
   
   html
   {
       font-size:100%;
+      font-family: "Poppins", sans-serif;
   
   }
   
   body
-  {   color: rgb(27, 27, 27);
+  {
       -webkit-font-smoothing:antialiased;
-      font-family:"Poppins", serif;
+      color:#ffffff;
+      font-family:Lora, serif;
       font-size:18px;
       font-weight:400;
       line-height:1.4;
       text-rendering:optimizeLegibility;
-      background-color:#f2ebe5;
- 
+      background-color: black;
   
   }
-
-  span.bgcolor,
-  .bgcolor {
-    background-color:#f2ebe5;
-    display: inline-block;
-    padding: 0 5prgb(123, 0, 255);
-    border-radius: 2px;
-    color: black;
-  }
-
+  
   .skill-set li:hover
   {
-    background-color:#f2ebe5;
-      color: black;
-    }
+      background:#fbff00;
+      color: #262626;
+  }
   
   h1
   {
-      color:rgba(0, 0, 0, 0.962);
+      color:rgba(255, 255, 255, 0.962);
   }
   
   .wrapper
@@ -82,10 +63,9 @@
   
   .name-hero
   {
-    background-color:#ffeede;
-    color: black;
+      background:rgba(255, 255, 255, 0.001);
       bottom:0;
-      height:490px;
+      height:290px;
       left:0;
       margin:auto;
       position:absolute;
@@ -96,7 +76,7 @@
   
   .me-img
   {
-      background:url(https://i.ibb.co/K6jMZxM/IMAGE-2024-03-09-08-24-26.jpg) no-repeat center center ;
+      background:url(https://media-exp1.licdn.com/dms/image/C4E03AQGnLq_IB_mf8Q/profile-displayphoto-shrink_400_400/0/1631022739752?e=1648684800&v=beta&t=eICUjHeH_g9GQEItmEMK1j2gCADwqfjrlccSD_5za58) no-repeat center center ;
       background-size:100%;
     background-position:0px;
       border-radius:100%;
@@ -115,21 +95,21 @@
   
   .dot_style{
   
-      color:var(--primary-color);
+      color:rgb(255, 255, 0);
       font-size:2em;
   
   }
   
   .name-hero h1 em
   {
-    color:black;
-    font-style:normal;
+      color:rgb(255, 234, 0);
+      font-style:normal;
       font-weight:700;
   }
   
   .name-hero p
   {
-      color:rgb(0, 0, 0);
+      color:rgb(255, 255, 255);
       font-size:.75em;
       line-height:1.5;
       margin:0 8px 0 0;
@@ -156,12 +136,12 @@
   
   .inner p
   {
-      color:rgba(65, 65, 65, 0.87);
+      color:rgba(152, 152, 152, 0.87);
   }
   
   .inner p em
   {
-      color:rgb(0, 0, 0);
+      color:rgb(222, 222, 222);
       font-style:normal;
   }
   
@@ -180,9 +160,9 @@
   
   .skill-set li
   {
-      background:var(--primary-color);
-      border-radius:6px;
-      color:#000000;
+      background:rgb(255, 3, 3);
+      border-radius:5px;
+      color:#d6d6d6;
       display:inline-block;
       list-style:none;
       margin:15px 15px 0 0;
@@ -238,7 +218,7 @@
   }
   :root {
       --hue: 223;
-      --fg:var(--primary-color);
+      --fg:rgb(255, 255, 0);
       --trans-timing: cubic-bezier(0.65,0,0.35,1);
       font-size: calc(16px + (24 - 16) * (100vw - 320px) / (2560 - 320));
   }
@@ -253,32 +233,7 @@
   }
   
   .btn {
-    
-    display: block;
-    border: 1px solid var(--primary-color);
-    border-radius: 0.25em;
-    padding: 0.375em 0.75em;
-    color: black;
-    font-weight: 600;
-    background-color: transparent;
-    cursor: pointer;
-    /* transition: background 0.5s, color 0.5s; */
-
-    transition:
-    background-color calc(var(--trans-dur) / 2) linear,
-    color var(--trans-dur);
--webkit-tap-highlight-color: transparent;
-  }
-  
-  .btn:hover {
-    background-color: var(--primary-color);
-    color: black;
-  }
-
-
-
-  /* .btn {
-      background-color: rgb(255, 225, 0);
+      background-color: rgba(255, 242, 0, 0.75);
       border-radius: 0.25em;
       color:rgb(255, 255, 255);
       cursor: pointer;
@@ -289,10 +244,9 @@
       -webkit-tap-highlight-color: transparent;
   }
   .btn:hover {
-      background:#ffdd00;
+      background:#dde108;
       color: #262626;
-  }  */
-  
+  }
   .btn-group {
       display: flex;
       gap: 0.375em;
@@ -307,7 +261,6 @@
   
   }
   .timeline__arrow {
-    color: var(--primary-color);
       background-color: transparent;
       border-radius: 0.25em;
       cursor: pointer;
@@ -420,9 +373,6 @@
           --primary: hsl(var(--hue),90%,70%);
       }
   }
-
-
-  
   /* fqa */
   .accordion {
       display: flex;
@@ -438,7 +388,7 @@
       border: 1px solid #4f4f4f7c;
       border-radius: 6px;
       background: #262626;
-      box-shadow: var(--primary-color);
+      box-shadow: rgb(255, 234, 0) 0px 1px 2px 0px;
   }
   .accordion-item .accordion-item-title {
       position: relative;
@@ -460,7 +410,7 @@
       font-size: 16px;
       line-height: 22px;
       font-weight: 300;
-      color: #ff0000;
+      color: #ffffff;
       border-top: 1px dashed #ddd;
       padding: 10px 20px 20px;
       box-sizing: border-box;
@@ -501,101 +451,3 @@
       }
   }
   
-  /* //////////////// */
-  #myBtn {
-    display: none; /* Hidden by default */
-    position: fixed; /* Fixed/sticky position */
-    bottom: 20px; /* Place the button at the bottom of the page */
-    right: 30px; /* Place the button 30px from the right */
-    z-index: 99; /* Make sure it does not overlap */
-    outline: none; /* Remove outline */
-    cursor: pointer; /* Add a mouse pointer on hover */
-    padding: 15px; /* Some padding */
-    border-radius: 150px; /* Rounded corners */
-    font-size: 18px; /* Increase font size */
-  
-      border-radius: 10px;
-      font-size: 15px;
-      font-weight: 600;
-      cursor: pointer;
-    --button-bg: hsl(0, 0%, 18%);
-    --button-fg: hsl(0 0% 90%);
-    --hover-bg: hsl(0, 0%, 61%);
-    color:  hsl(0 0% 90%);
-    font-family: sans-serif;
-    border-radius: 100px;
-    border: 2px solid hsl(0 0% 90%);
-    background: hsl(0, 0%, 18%);
-  
-  }
-  
-  #myBtn:hover {
-    background-color:var(--hover-bg); /* Add a dark-grey background on hover */
-  }
-  /* story */
-  .story{
-    font-family:"Poppins" sans-serif;
-    font-size:  20px;
-
-
-  }
-  .step{
-    font-smooth: auto;
-    font-family: 'Whitney', sans-serif;
-    font-weight:700;
-    color:#000000;
-    font-size:22px;
-    opacity:0.8
-  }
-  .link {
-    text-decoration:none;
-    color:#000000;
-    font-family: 'Whitney', sans-serif;
-    font-size:13px;
-    opacity:0.8;
-    margin-right:auto;
-    margin-left:auto;
-    padding:10px 20px;
-    border:2px solid #fff;
-    border-radius:100px;
-  }
-  
-  .link:hover{
-    opacity:1;
-    }
-  .instructions{
-    font-smooth: auto;
-    font-family: 'Whitney', sans-serif;
-    font-weight:650;
-    color:rgba(255,255,255,0.65);
-    font-size:16px;
-  }
-  .highlight{
-    background:rgba(255,255,255,0.1);
-    display:inline-block;
-    opacity:1;
-    border-radius:2px;
-    padding:0 5px;
-    color:#fff
-  }
-  .highlight:hover{
-    background:rgba(255,255,255,0.2);
-  }
-  .bottom-wrapper{
-    width:100%;
-    background:#2C2F33;
-    text-align:center;
-    padding-top:30px;
-    padding-bottom:30px;
-  }
-  .wsite{
-    text-decoration:none;
-    color:#000000;
-    font-family: 'Whitney', sans-serif;
-    font-size:18px;
-    opacity:0.5;
-    transition:all 100ms ease
-  }
-  .bottom-wrapper:hover .wsite{
-    opacity:0.8
-  }

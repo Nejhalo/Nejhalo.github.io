@@ -10,42 +10,404 @@
    <!-- Font (Poppins) ------->
    <link rel="preconnect" href="https://fonts.googleapis.com">
    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-   <link href="https://fonts.googleapis.com/CaseStudy2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+   <link href="https://fonts.googleapis.com/css?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
    <link >
    <!-- Font Awsome Icons -->
    <script src="https://kit.fontawesome.com/2786bc3471.js" crossorigin="anonymous"></script> 
    <!-- Font Awsome Icons -->
    <script src="https://kit.fontawesome.com/2786bc3471.js" crossorigin="anonymous"></script> 
-   <link rel="stylesheet" type="text/css" href="Style/coinest.css" />
-   <!-- <link rel="stylesheet" type="text/css" href="Style/header2.css" /> -->
-   
-   <script src="index.html"></script>
+<style>
+
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  height: 100vh;
+}
+
+.text {
+  font-size: 10vw;
+  letter-spacing: -.01em;
+  line-height: 100%;
+  margin: 0;
+  
+  width: 100%;
+  color: rgb(182, 182, 182, 0.2);
+  background: linear-gradient(to right, #ff7272, #b6b6b6) no-repeat;
+  -webkit-background-clip: text;
+  background-clip: text;
+  background-size: 0%;
+  transition: background-size cubic-bezier(.1,.5,.5,1) 0.5s;
+  
+
+  border-bottom: 1px solid #2F2B28;
+  
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  position: relative;
+}
+
+span {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: #4246ce;
+  color: #0D0D0D;
+  
+  clip-path: polygon(0 50%, 100% 50%, 100% 50%, 0 50%);
+  transform-origin: center;
+  transition: all cubic-bezier(.1,.5,.5,1) 0.4s;
+  
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.text:hover > span {
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+  /* new */
+   @import url('https://fonts.googleapis.com/CaseStudy2?family=PT+Mono&family=PT+Sans:wght@400;700&display=swap');
+
+/* === Grid and base layout === */
+
+:root {
+  --highlight: #3e53cb;
+  --body-pad-top: 70px;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: grid;
+  margin: 0;
+  padding:  var(--body-pad-top) 45px;
+  min-width: 350px;
+  grid: auto / 200px minmax(250px,1000px);
+  align-items: start;
+  justify-content: left;
+  gap: 20px;
+  font: 16px/1.3 'Poppins', sans-serif;
+  color: #edf2f4;
+  background-color: #0D0D0D;
+
+}
+
+nav {
+  position: sticky;
+  left: 0;
+  top: var(--body-pad-top);
+  line-height: 2;
+}
+
+article {
+  margin-top: -50px;
+  padding-top: 50px;
+}
+
+/* === Navbar and marker === */
+
+nav ul {
+  margin: 0;
+  padding-left: 10px;
+  list-style: none;
+}
+
+nav li > ul {
+  padding-left: 30px;
+}
+
+nav a {
+  display: inline-block;
+  color: #545454;
+  text-decoration: none;
+  transition: all 300ms ease-in-out;
+}
+  
+nav li.visible > a {
+  color: #ffe100;
+  transform: translate(5px);
+}
+
+nav svg {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+nav path {
+  transition: all 300ms ease;
+  fill: transparent;
+  stroke: var(--highlight);
+  stroke-width: 3px;
+  stroke-dasharray: 0 0 0 1000;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+/* === Body contents === */
+
+section[id] {
+  margin: 25px 0;
+  padding: 25px 0;
+}
+
+h1, h2 {
+  margin: 0;
+  padding: 0;
+  font-size: 36px;
+}
+
+h2 {
+  padding-left: 10px;
+  border-left: 4px solid var(--highlight);
+  font-size: 24px;
+}
+
+h1 span,
+.subheading {
+  display: block;
+  color: #666;
+  font: 700 20px sans-serif;
+}
+
+article a {
+  color: #006eff;
+  text-decoration-color: var(--highlight);
+}
+
+article a:hover {
+  margin: -2px;
+  padding: 2px;
+  border: 0;
+  background: var(--highlight);
+}
+
+code {
+  margin: -2px;
+  padding: 2px;
+  background: rgba(191, 235, 101, 0.05);
+  font-family: 'PT Mono', monospace;
+  color: #fff87d;
+}
+
+/* === Adjustments === */
+
+/* Scroll all the way up even if the first section starts a couple hundred pixels down the page */
+section:first-of-type {
+  margin-top: -300px;
+  padding-top: 350px;
+}
+
+article,
+section:last-of-type,
+section:last-of-type p:last-of-type {
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+/* photo */
+.heading {
+  font-family: "Playfair Display", serif;
+}
+
+main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  height: calc(100vh - 5rem);
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding: 0 3.125rem;
+}
+
+.wrapper {
+  overflow: hidden;
+}
+
+.absolute-wrapper {
+  position: absolute;
+  overflow: hidden;
+  height: 100vh;
+  width: 60%;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.colored-backgrounds {
+  position: absolute;
+  height: inherit;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.colored-backgrounds div {
+  width: 100%;
+  height: 100%;
+  -webkit-box-flex: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+}
+
+
+
+.content h1 {
+  margin-bottom: 1rem;
+  font-size: 3.5rem;
+}
+
+.content p {
+  margin-bottom: 1.5rem;
+  font-family: open sans;
+}
+
+.content button {
+  border: none;
+  background-color: #7bcc3c;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  padding: 1rem 2.5rem;
+  cursor: pointer;
+}
+
+.content button:active {
+  -webkit-transform: scale(0.96);
+  transform: scale(0.96);
+}
+
+.images {
+  width: 700px;
+  height: 500px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.images .image {
+  height: 100%;
+  width: 100%;
+  -webkit-box-flex: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+}
+
+.image:nth-child(1) {
+  background: url("https://vikram-hegde.github.io/ui-animation/images/image1.png")
+    no-repeat 50% 50% / cover;
+}
+
+.image:nth-child(2) {
+  background: url("https://vikram-hegde.github.io/ui-animation/images/image2.png")
+    no-repeat 50% 50% / cover;
+}
+
+.image:nth-child(3) {
+  background: url("https://vikram-hegde.github.io/ui-animation/images/image3.png")
+    no-repeat 50% 50% / cover;
+}
+
+.image:nth-child(4) {
+  background: url("https://vikram-hegde.github.io/ui-animation/images/image4.png")
+    no-repeat 50% 50% / cover;
+}
+
+.navigation .right,
+.navigation .left {
+  height: 60px;
+  width: 60px;
+  border: 1px solid #333;
+  border-radius: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin-top: 1rem;
+  cursor: pointer;
+}
+
+.navigation .right:hover,
+.navigation .left:hover {
+  background-color: #333;
+  color: white;
+}
+
+.navigation .right:active,
+.navigation .left:active {
+  -webkit-transform: scale(0.96);
+  transform: scale(0.96);
+}
+
+.images,
+.colored-backgrounds {
+  -webkit-transition: -webkit-transform 0.35s
+    cubic-bezier(0.39, 0.575, 0.565, 1);
+  transition: -webkit-transform 0.35s cubic-bezier(0.39, 0.575, 0.565, 1);
+  transition: transform 0.35s cubic-bezier(0.39, 0.575, 0.565, 1);
+  transition: transform 0.35s cubic-bezier(0.39, 0.575, 0.565, 1),
+    -webkit-transform 0.35s cubic-bezier(0.39, 0.575, 0.565, 1);
+}
+
+.colored-backgrounds {
+  -webkit-transition-delay: 150ms;
+  transition-delay: 150ms;
+}
+
+</style>
+
 </head>
 <body> 
     <nav>
+
         <ul>
-        <li><a href="#intro">Background</a></li>
+        <li><a href="#intro">Intro</a></li>
             <li>
-                <a href="#first">Problem Space</a>
+                <a href="#first">First section</a>
                 <ul>
                     <li>
-              <a href="#second">Vison Aligment</a>
+              <a href="#second">Second section</a>
               <ul>
                 <li>
-                  <a href="#third">Info Arch</a>
+                  <a href="#third">Third section</a>
                 </li>
               </ul>
             </li>
                 </ul>
             </li>
             <li>
-                <a href="#fourth">Final Design</a>
+                <a href="#fourth">Fourth section</a>
           <ul>
-            <li><a href="#fifth">Eighth section</a></li>
-            <li><a href="#sixth">Impact</a></li>
+            <li><a href="#fifth">Fifth section</a></li>
+            <li><a href="#sixth">Sixth section</a></li>
           </ul>
             </li>
-        <li><a href="#seventh">Cohesive Experience</a></li>
+        <li><a href="#seventh">Seventh section</a></li>
         <li><a href="#eighth">Eighth section</a></li>
         </ul>
       
@@ -56,45 +418,10 @@
     </nav>
     
     <article id="top">
-      <div class="sid" style="padding: 10px 2%;">
-        <nav style=" display: flex;
-        align-items: center;
-        justify-content: space-between;">
-          <img src="https://i.ibb.co/jyzWsXF/Frame-19.png" class="logo" style="  width: 190px;
-          ">
-          <ul id="mobile-menu">
-            <li style=" display: inline-block;margin-right: 18px;position: relative; ">
-            
-            <a style="  text-decoration: none;color: white;font-size: 19px;display: inline-block;
-  font-weight: 600; ::after{  
-   width: 0%;height: 3px;color:#ffe100;
-  position: absolute;left: 0px;  bottom: -6px;transition: width 0.5s;} "
-
-  href="index.html">Home<span style="  font-size: 18px;font-weight: 900; color:#ffe100;">.</span></a></li>
- 
-  
-  
-  
-
-   
-  
-                 
-          </ul>
-         
-        </nav></div>
-      <h1 slot=" font-size: 20px;padding-left: 20px;
-
-      padding-top: 20%;
-      float: left;">
-      <img style=" max-width: 25%; max-height:15%;float: left;" src="/ICO/coinest-icon.png" alt="Coinest icon" width="70px" height="70px" >
-     
-      Coinest Case study</h1>
       
-      <div class="subheading"><P>This is a project for the Amanj Academy boot camp.</P></div>
-      
-  
-
-         <!--<div class="container">
+      <div class="subheading">An intersectionObserver approach to</div>
+      <h1>Hakim's Progress Nav Concept
+        <div class="container">
           <h1 class="text">TEXT EFFECT<span>WOAH</span></h1>
           <h1 class="text">GSAP<span>AND CLIPPING</span></h1>
           <h1 class="text">CRAZYYY<span>CRAZYYY</span></h1>
@@ -103,46 +430,29 @@
         </div>
 
 
-      </h1> -->
+      </h1>
       
       <section id="intro">
         <h2>Intro</h2>
-       <h3> TLDR:</h3>
-          <p>This Android application serves as a platform for personal financial management. It allows you to create a budget for your monthly income, keep track of your expenses, and write down your costs every month. The most significant feature of the app is that it enables you to compile a list of your dreams (goals) and determine the cost of achieving them. You can also use the app's wallet as a safe place to save money towards achieving your goals. Another feature of the application is the ability to transfer money. However, you must purchase the premium version to access all the features.
-          And transfer money is another feature of this app but user for fully use all the features, They must buy the premium version.</p>
-          <p>This project is for Amanj Academy, which is a boot camp organized by Webinar Academy. We were given the challenge of creating an Android app within a time frame of about three weeks. </p>
-           <p>Given the challenging conditions in Iran and the financial difficulties faced by people, especially employees who struggle with saving, but require more accurate management of their expenses, I decided to design this product. By creating new and improved experiences compared to the current conditions, with the help of a digital product designed for the Android platform, it will assist them in achieving financial goals and monthly savings. Besides, it will help maintain control, increase awareness of expenses, and transform their financial habits.</p>
-          <P style="color: aquamarine;"><b>Our target audience is the working population living independently, and we have decided to focus our product on them.</b></P>
-          <img src="ICO/coinest-shot.png" width="100%" height="auto" class="center" >
-
+        <p>Hakim el Hattab published a <a href="https://codepen.io/hakimel/pen/BpKNPg">Progress Nav concept</a> on Codepen back in 2017. As pointed out by Chris in <a href="https://CaseStudy-tricks.com/table-of-contents-with-intersectionobserver/">a recent blog post</a> over at CaseStudy Tricks, we now have the Intersection Observer API which saves us a good amount of hassle. Here's my attempt at an <code>intersectionObserver</code> version of Hakim's amazing nav concept.</p>
       </section>
       
-
       <section id="first">
-        <h2>Problem Space</h2>
-        <p style="font-weight: 700; color: cornflowerblue;">Most people spend their time and money without purpose.</p>
-        <P>Goal:</P>
-        <P>1.A simple and valuable solution that surpasses current options for the target group.</P>
-        <P>2.It is possible to implement a sales or monetization model to generate revenue.</P>
-        <P>3.Focusing on your solution's unique value compared to competitors.</P>
-        
-        <section id="second">
-          <h2>First section</h2>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus nisi nisl, pharetra et odio non, sollicitudin bibendum enim. Integer posuere, est et posuere feugiat, nisi nunc auctor nisi, eu tristique ipsum justo ut tellus. Phasellus molestie ultricies sodales. Nunc nec ligula placerat, vehicula orci a, tincidunt ante. Donec ac metus quis nunc cursus tincidunt.</p>
-        <p>Vivamus sed ullamcorper ex. Suspendisse potenti. Nam sodales hendrerit enim, non fringilla mauris gravida maximus. Sed pharetra purus eget quam auctor luctus. Aenean arcu nulla, aliquam ut consectetur non, tincidunt eget sem. Aliquam tristique mattis urna, a posuere justo dapibus nec. Aenean non lacinia nisl. Aenean ac bibendum eros. Integer posuere enim tempor auctor venenatis. Etiam convallis nunc at eros ultrices, et elementum erat ultrices.</p>
-        </section>
-           
-       <img src="/ICO/userflow.png" height="auto" width="100%">
-
+        <h2>First section</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus nisi nisl, pharetra et odio non, sollicitudin bibendum enim. Integer posuere, est et posuere feugiat, nisi nunc auctor nisi, eu tristique ipsum justo ut tellus. Phasellus molestie ultricies sodales. Nunc nec ligula placerat, vehicula orci a, tincidunt ante. Donec ac metus quis nunc cursus tincidunt.</p>
+      <p>Vivamus sed ullamcorper ex. Suspendisse potenti. Nam sodales hendrerit enim, non fringilla mauris gravida maximus. Sed pharetra purus eget quam auctor luctus. Aenean arcu nulla, aliquam ut consectetur non, tincidunt eget sem. Aliquam tristique mattis urna, a posuere justo dapibus nec. Aenean non lacinia nisl. Aenean ac bibendum eros. Integer posuere enim tempor auctor venenatis. Etiam convallis nunc at eros ultrices, et elementum erat ultrices.</p>
+      </section>
+      
+      <section id="second">
+        <h2>Second section</h2>
+        <p>Phasellus congue felis quis arcu dignissim, pulvinar mollis ante pretium. Sed ac auctor quam. Mauris ac tellus et quam porta mattis quis quis quam. Sed tristique gravida mauris, eget eleifend nunc accumsan in.</p>
+        <p>Donec consequat fringilla diam, sit amet aliquam magna faucibus vel. Sed sagittis id nisi et facilisis. Aliquam erat volutpat. Mauris arcu nunc, euismod at enim at, porttitor laoreet lorem. In molestie dui at augue aliquet, in tincidunt nisi dictum. Donec sagittis enim vestibulum est elementum, vel lobortis libero suscipit.</p>
+      <p>Vivamus sed ullamcorper ex. Suspendisse potenti. Nam sodales hendrerit enim, non fringilla mauris gravida maximus. Sed pharetra purus eget quam auctor luctus. Aenean arcu nulla, aliquam ut consectetur non, tincidunt eget sem. Aliquam tristique mattis urna, a posuere justo dapibus nec. Aenean non lacinia nisl. Aenean ac bibendum eros. Integer posuere enim tempor auctor venenatis. Etiam convallis nunc at eros ultrices, et elementum erat ultrices.</p>
       </section>
       
       <section id="third">
         <h2>Third section</h2>
         <p>Etiam id ex dolor. Curabitur quis tellus vitae neque finibus suscipit. Donec vel nisl ac justo mattis molestie. Vivamus in interdum est. Fusce sed malesuada tellus. Suspendisse imperdiet condimentum sem in tristique. Donec faucibus dui non pharetra cursus. Praesent congue turpis leo, vitae porttitor elit fringilla vel. Phasellus ut aliquet augue. Donec egestas luctus placerat.</p>
-        <video uncontrols loop muted autoplay   width="100%" height="auto" > 
-          <source  src="https://uploadkon.ir/uploads/c2c623_24mockup.mp4" type="video/mp4" autoplay="true" >
-          <source src="movie.ogg" type="video/ogg">
-          </video>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus nisi nisl, pharetra et odio non, sollicitudin bibendum enim. Integer posuere, est et posuere feugiat, nisi nunc auctor nisi, eu tristique ipsum justo ut tellus. Phasellus molestie ultricies sodales. Nunc nec ligula placerat, vehicula orci a, tincidunt ante. Donec ac metus quis nunc cursus tincidunt.</p>
       <p>Vivamus sed ullamcorper ex. Suspendisse potenti. Nam sodales hendrerit enim, non fringilla mauris gravida maximus. Sed pharetra purus eget quam auctor luctus. Aenean arcu nulla, aliquam ut consectetur non, tincidunt eget sem. Aliquam tristique mattis urna, a posuere justo dapibus nec. Aenean non lacinia nisl. Aenean ac bibendum eros. Integer posuere enim tempor auctor venenatis. Etiam convallis nunc at eros ultrices, et elementum erat ultrices.</p>
       <div class="absolute-wrapper">
@@ -228,62 +538,9 @@
         <p>Vivamus in elit non turpis eleifend egestas eget scelerisque turpis. Integer semper eget sem vel porttitor. Phasellus nec rhoncus elit. Donec feugiat mollis dui ac vehicula. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.</p>
         <p>In aliquam maximus dui, nec iaculis nunc gravida et. Cras dapibus porta est, sed finibus arcu viverra in. Vivamus volutpat placerat urna, non varius sapien tempor sit amet. Cras quis dictum enim. Vestibulum ac rhoncus diam, non venenatis dolor. Curabitur ut velit tincidunt, pulvinar dolor sit amet, tincidunt arcu. Integer at ipsum eu ex blandit consectetur.</p>
         <p>Fusce quis rutrum turpis. Proin pulvinar, nisi id porttitor laoreet, neque diam finibus eros, a aliquam nibh libero quis nisi. Morbi vehicula tincidunt maximus.</p>
-        <p>Fusce quis rutrum turpis. Proin pulvinar, nisi id porttitor laoreet, neque diam finibus eros, a aliquam nibh libero quis nisi. Morbi vehicula tincidunt maximus.</p>
-        <p>Fusce quis rutrum turpis. Proin pulvinar, nisi id porttitor laoreet, neque diam finibus eros, a aliquam nibh libero quis nisi. Morbi vehicula tincidunt maximus.</p>
-        <p>Fusce quis rutrum turpis. Proin pulvinar, nisi id porttitor laoreet, neque diam finibus eros, a aliquam nibh libero quis nisi. Morbi vehicula tincidunt maximus.</p>
-        <p>Fusce quis rutrum turpis. Proin pulvinar, nisi id porttitor laoreet, neque diam finibus eros, a aliquam nibh libero quis nisi. Morbi vehicula tincidunt maximus.</p>
-        <p>Fusce quis rutrum turpis. Proin pulvinar, nisi id porttitor laoreet, neque diam finibus eros, a aliquam nibh libero quis nisi. Morbi vehicula tincidunt maximus.</p>
-        <p>Fusce quis rutrum turpis. Proin pulvinar, nisi id porttitor laoreet, neque diam finibus eros, a aliquam nibh libero quis nisi. Morbi vehicula tincidunt maximus.</p>
-        <p>Fusce quis rutrum turpis. Proin pulvinar, nisi id porttitor laoreet, neque diam finibus eros, a aliquam nibh libero quis nisi. Morbi vehicula tincidunt maximus.</p>
-        <p>Fusce quis rutrum turpis. Proin pulvinar, nisi id porttitor laoreet, neque diam finibus eros, a aliquam nibh libero quis nisi. Morbi vehicula tincidunt maximus.</p>
-        <p>Fusce quis rutrum turpis. Proin pulvinar, nisi id porttitor laoreet, neque diam finibus eros, a aliquam nibh libero quis nisi. Morbi vehicula tincidunt maximus.</p>
-        <p>Fusce quis rutrum turpis. Proin pulvinar, nisi id porttitor laoreet, neque diam finibus eros, a aliquam nibh libero quis nisi. Morbi vehicula tincidunt maximus.</p>
-        <p>Fusce quis rutrum turpis. Proin pulvinar, nisi id porttitor laoreet, neque diam finibus eros, a aliquam nibh libero quis nisi. Morbi vehicula tincidunt maximus.</p>
-        <p>Fusce quis rutrum turpis. Proin pulvinar, nisi id porttitor laoreet, neque diam finibus eros, a aliquam nibh libero quis nisi. Morbi vehicula tincidunt maximus.</p>
-        <p>Fusce quis rutrum turpis. Proin pulvinar, nisi id porttitor laoreet, neque diam finibus eros, a aliquam nibh libero quis nisi. Morbi vehicula tincidunt maximus.</p>
-
       </section>
       
-    <section>
-      <div id="portfolio">
-        <div class="container">
-          <h1 class="sub-title">Related post</h1>
-                <!--------------------txt----------------->
-          <!----<div id="Proposal">
-            <div class="span">We excel at</div>
-            <div class="span" id="ProposalValue"></div>
-          </div>-->
-          
-          <div class="row">
-
-            <div class="portfolio-col">
-              <img src="https://i.ibb.co/L0k4cW4/mockuuups-macbook-pro-mockup-on-a-table-with-a-plant-in-the-background-1.png" alt="mockuuups-macbook-pro-mockup-on-a-table-with-a-plant-in-the-background-1" >
-              <div class="layer">
-                <h3>TTCU</h3>
-                <p>This website is an integrated system for converging communication for students and professors when they can't get in touch.</p>
-                <a href="#"><i class="fa-solid fa-link"></i></a>
-              </div>
-            </div>
-            <div class="portfolio-col">
-              <img src="https://i.ibb.co/TtFwj2J/mockuuups-iphone-14-pro-on-a-plane-mockup-1.png" alt="mockuuups-iphone-14-pro-on-a-plane-mockup-1" >
-              <div class="layer">
-                <h3>Ariya Health</h3>
-                <p>Considering the problems in the field of health in IRAN, This is a comprehensive application for the health of residents.</p>
-                <a href="#"><i class="fa-solid fa-link"></i></a>
-              </div>
-            </div>
-          </div>
-          <!--- <button onclick="window.location.href='my-work.html'">
-            <span class="back">
-              <span></span>
-            </span>
-          Learn More      
-          </button> -->
-    </a>
-        </div>
-      </div>
-    </section>
-  </article>
+    </article>
 </body>
 <script>
 
@@ -448,23 +705,5 @@ textElements.forEach(text => {
     },
   });
 });
-//
-var tabLinks = document.getElementsByClassName("tab-links");
-var tabContents = document.getElementsByClassName("tab-contents");
-
-function openTab(tabName) {
-  for (let tabLink of tabLinks) {
-    tabLink.classList.remove("active-link");
-  }
-
-  for (let tabContent of tabContents) {
-    tabContent.classList.remove("active-tab");
-  }
-
-  event.currentTarget.classList.add("active-link");
-  document.getElementById(tabName).classList.add("active-tab");
-}
-
-
    </script>
 </html>
