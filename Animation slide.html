@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @import url("https://fonts.googleapis.com/css2?family=Krona+One&family=Kulim+Park:ital,wght@0,200;0,400;1,600&family=Modak&display=swap");
+
+body {
+  height: 100vh;
+  background-color: #baa6cb;
+}
+
+* {
+  background-image: none !important;
+}
+
+.container {
+  width: 400%;
+  height: 100%;
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+.bg-silver {
+  position: absolute;
+  width: 500px;
+}
+
+h1 {
+  width: 60%;
+  font-family: "Krona One";
+  font-size: 90px !important;
+  color: #cbff98 !important;
+  text-shadow: 0px 0px 20px rgba(0, 0, 0, 0.3);
+}
+
+h2 {
+  font-family: "Modak";
+  font-size: 100px;
+  font-weight: normal;
+}
+
+.panel1 {
+  background-color: #a9b6a2;
+}
+.panel2 {
+  background-color: #ef704f;
+}
+.panel3 {
+  background-color: #ececec;
+}
+.panel4 {
+  background-color: #baa6cb;
+}
+
+.panel1 {
+  gap: 20px;
+}
+
+.panel1 img {
+  width: 20%;
+}
+
+.panel2 img {
+  width: 50%;
+  align-self: flex-end;
+  margin-bottom: -20px;
+}
+
+svg {
+  max-height: 100vh;
+}
+
+#end {
+  visibility: hidden;
+}
+
+    </style>
+</head>
+<body>
+    <div class="description panel">
+        <img class="bg-silver" src=" https://assets.codepen.io/588164/silverpaper.png" alt="" />
+        <!-- This is a dog photo, from unsplash - for reference on how to add other images
+       "https://images.unsplash.com/photo-1534351450181-ea9f78427fe8?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" 
+      -->
+        <h1 class="split">animate anything</h1>
+      </div>
+      
+      <div class="container horizontal">
+        <section class="panel panel1">
+          <img class="circle1" src="https://assets.codepen.io/588164/vit.png" alt="" />
+          <img class="circle2" src="https://assets.codepen.io/588164/rod.png" alt="" />
+          <img class="circle3" src="https://assets.codepen.io/588164/lila.png" alt="" />
+          <img class="circle4" src="https://assets.codepen.io/588164/gul.png" alt="" />
+        </section>
+      
+        <section class="panel panel2">
+          <img src="https://assets.codepen.io/588164/19.png" alt="" />
+          <h2 class="modak">animate anything</h2>
+        </section>
+      
+        <section class="panel panel3">
+          <svg width="659" height="1222" viewBox="0 0 659 1222" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path id="start" d="M258.577 42.6299C289.949 -12.9912 370.051 -12.9911 401.423 42.6299L442.104 114.757C449.45 127.782 460.218 138.55 473.243 145.896L545.37 186.577C600.991 217.949 600.991 298.051 545.37 329.423L473.243 370.104C460.218 377.45 449.45 388.218 442.104 401.243L401.423 473.37C370.051 528.991 289.949 528.991 258.577 473.37L217.896 401.243C210.55 388.218 199.782 377.45 186.757 370.104L114.63 329.423C59.0088 298.051 59.0089 217.949 114.63 186.577L186.757 145.896C199.782 138.55 210.55 127.782 217.896 114.757L258.577 42.6299Z" fill="#E7BF30" />
+            <path id="end" d="M383.036 1192.27C357.768 1230.85 301.232 1230.85 275.964 1192.27L11.1815 788.07C-16.7006 745.506 13.8347 689 64.7175 689L594.282 689C645.165 689 675.701 745.506 647.819 788.07L383.036 1192.27Z" fill="#E17C7C" />
+          </svg>
+        </section>
+      
+        <section class="panel panel4">
+          <h2>Thank you 👋</h2>
+        </section>
+      </div>
+</body>
+<script>
+   //In  GSAP we call these blocks of codes; tweens
+gsap.to(".bg-silver", {
+  scale: 1.1,
+  duration: 2,
+  repeat: -1,
+  yoyo: true,
+  ease: "power1.inOut"
+});
+
+const splittedText = new SplitText(".split", { type: "chars" });
+const chars = splittedText.chars;
+
+gsap.from(chars, {
+  yPercent: 450,
+  // stagger: 0.05 Makes the letter come in one by one.
+  stagger: {
+    each: 0.05,
+    from: "random"
+  },
+  ease: "back.out",
+  duration: 1
+});
+
+/*
+gsap.from([chars[2], chars[12]], {
+  rotation: 360,
+  duration: 2,
+  delay: 3,
+  repeat: -1
+});
+*/
+
+// Here we're creating a timeline that we can use
+const tl = gsap.timeline({
+  repeat: -1,
+  duration: 2,
+  delay: 3,
+  yoyo: true
+});
+
+tl.to(chars[2], { rotation: 360 });
+tl.to(chars[12], { rotation: 360 });
+
+// Horizontal Scrolling part 👇
+
+const horizontalPanels = gsap.utils.toArray(".horizontal .panel");
+
+const scrollTween = gsap.to(horizontalPanels, {
+  xPercent: -100 * (horizontalPanels.length - 1), // Regardless how many panels you have, this will work
+  ease: "none",
+  scrollTrigger: {
+    trigger: ".horizontal",
+    pin: true,
+    scrub: 1,
+    snap: 1 / (horizontalPanels.length - 1), // snap prevents the scroll to stop "in between" panels
+    end: "+=3500"
+  }
+});
+
+// PANEL 1 - CIRCLES
+let tml = gsap.timeline({ repeat: -1, repeatDelay: 1, yoyo: true });
+
+// choose the order of the animations here
+tl.to(".circle1", { rotation: 360 });
+tl.to(".circle3", { rotation: 360 });
+tl.to(".circle4", { rotation: 360 });
+tl.to(".circle2", { rotation: 360 });
+
+// PANEL 2 - PULSE THE IMAGE
+gsap.to(".panel2 img", {
+  scale: 1.1, // Scale up to 110%
+  duration: 2, // Duration of each pulse
+  ease: "power1.inOut", // Easing function for a smooth effect
+  repeat: -1, // Repeat the animation indefinitely
+  yoyo: true // Make the animation reverse on alternate repeats
+});
+
+// PANEL 3 - MORPHING BETWEEN TWO SVG PATHS
+const morph = gsap.to("#start", {
+  duration: 7,
+  morphSVG: "#end",
+  repeat: -1,
+  yoyo: true,
+  ease: "sine.out"
+});
+
+// Some ppl have this setting turned off, so for accessibility reasons it is a good thing to check if users prefers website without animations, they dont have to see the animations.
+const animationIsOkay = window.matchMedia(
+  "(prefers-reduced-motion: no-preference)"
+).matches;
+
+//Then wrap the animations in an if statemanet,
+if (animationIsOkay) {
+  //  ...do the animations in here
+}
+
+</script>
+</html>

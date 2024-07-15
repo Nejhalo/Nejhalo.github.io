@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nejhalo</title>
+   <!-- add icon link -->
+   <link rel="icon" type="image/x-icon" href="ICO/Frame-19.ico" >
+  
+    <!-- Font (Poppins) ------->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/CaseStudy2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link >
+    <!-- Font Awsome Icons -->
+    <script src="https://kit.fontawesome.com/2786bc3471.js" crossorigin="anonymous"></script>
+    <script src="https://platform.linkedin.com/badges/js/profile.js" async defer type="text/javascript"></script> 
+   <link rel="stylesheet" type="text/css" href="Style/index.css" />
+  
+    <!-- Font Awsome Icons -->
+    <script src="https://kit.fontawesome.com/2786bc3471.js" crossorigin="anonymous"></script> 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="Style/header.css" />
+
+    <title>Document</title>
+    
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+          <nav>
+            <img src="https://i.ibb.co/jyzWsXF/Frame-19.png" class="logo">
+            <ul id="mobile-menu">
+              <li><a href="#header">Home<span class="color">.</span></a></li>
+              <li><a href="#about">About<span class="color">.</span></a></li>
+              <!-- <li><a href="#services">Services<span class="color">.</span></a></li> -->
+              <li><a href="#portfolio">Works<span class="color">.</span></a></li>
+              <li><a href="#contact">Contact Me<span class="color">.</span></a></li>
+              <i class="fa-solid fa-xmark" onclick="closeMenu()"></i>
+            </ul>
+           <p onclick="openMenu()"><i class="fa-solid fa-bars" onclick="openMenue()"></i></p>
+          </nav>
+          <div class="header-text">
+         
+            <p>Hi there, I'm <span class="color">F</span>atemeh<span class="color"> </p>
+            <h1 class="main-title">A specialising in UI/UX, </p>
+    
+          
+              <div class="content">
+                <h1 class="title"> Visual and Digital
+                  Product Design
+                 
+                  <div class="aurora">
+                    <div class="aurora__item"></div>
+                    <div class="aurora__item"></div>
+                    <div class="aurora__item"></div>
+                    <div class="aurora__item"></div>
+                  </div>
+                </h1>
+                <!-- <p class="subtitle">Made with love and only the CaseStudy.</p>-->
+              </div>
+              
+             <!-- <span class="bgcolor">fff</span></h1>-->
+          </div>
+     
+        </div>
+    
+      </div>
+    
+     
+</body>
+<script>
+  
+
+    var tabLinks = document.getElementsByClassName("tab-links");
+  var tabContents = document.getElementsByClassName("tab-contents");
+  
+  function openTab(tabName) {
+    for (let tabLink of tabLinks) {
+      tabLink.classList.remove("active-link");
+    }
+  
+    for (let tabContent of tabContents) {
+      tabContent.classList.remove("active-tab");
+    }
+  
+    event.currentTarget.classList.add("active-link");
+    document.getElementById(tabName).classList.add("active-tab");
+  }
+  
+  // ---------------- JS for Mobile Menu ------------------
+  var mobileMenu = document.getElementById("mobile-menu");
+  function openMenu() {
+    mobileMenu.style.right = "0px";
+  }
+  
+  function closeMenu() {
+    mobileMenu.style.right = "-400px";
+  }
+  
+</script>
+</html>
+
