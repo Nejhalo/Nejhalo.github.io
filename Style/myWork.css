@@ -1,9 +1,10 @@
      /* RESET RULES
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 :root {
-    --black: #3a3a3a;
-    --white: #ffffff;
-    --green: #ffea00;
+  --black: #ffffff;
+  --text: #000000;
+  --white: #ffffff;
+    --green: #b5c4fe;
   }
   
   ::selection {
@@ -11,11 +12,7 @@
     color: rgb(0, 0, 0);
   }
 
-    
-  :root {
-    --primary-color: rgb(182, 172, 111);
-    --secondary-color: #262626;
-  }
+
   
 
   * {
@@ -39,11 +36,11 @@
   a {
     text-decoration: none;
     color: inherit;
-    color: var(--white);
+    color: var(--text);
   }
   
   body {
-    color: var(--black);
+    color: var(--text);
   }
   
   .author-archive {
@@ -54,7 +51,7 @@
   h1 {
     text-align: center;
     margin-bottom: 2rem;
-    color: var(--white);
+    color: var(--text);
   
   }
   
@@ -113,7 +110,7 @@
   }
   
   .posts .post {
-    background: #262626;
+    background: #b9c9f3;
     /* border: 2px solid rgba(255, 255, 255, 0.1); */
     border-radius: 10px;}
   
@@ -203,13 +200,13 @@
   /*______________________________________header/footer___________________*/
   
     :root {
-      --primary-color: #ffdd00;
-      --secondary-color: #262626;
+      --primary-color: #b5c4fe;
+      --secondary-color: #636365;
     }
     
     
     body {
-      background-color: #101113;
+      background-color:#f2ebe5;
     
     }
     
@@ -283,7 +280,7 @@
     
     nav ul li a {
       text-decoration: none;
-      color: white;
+      color: rgb(0, 0, 0);
       font-size: 19px;
       display: inline-block;
       font-weight: 600;
@@ -490,4 +487,110 @@
       }
     }
     
-  
+  .color{
+    color: var(--green);
+  }
+
+  /*Top button*/
+
+#myBtn {
+  display: none; /* Hidden by default */
+  position: fixed; /* Fixed/sticky position */
+  bottom: 20px; /* Place the button at the bottom of the page */
+  right: 30px; /* Place the button 30px from the right */
+  z-index: 99; /* Make sure it does not overlap */
+  outline: none; /* Remove outline */
+  cursor: pointer; /* Add a mouse pointer on hover */
+  padding: 15px; /* Some padding */
+  border-radius: 50px; /* Rounded corners */
+  font-size: 18px; /* Increase font size */
+
+    border-radius: 5px;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+  --button-bg: hsl(0, 0%, 18%);
+  --button-fg: hsl(0 0% 90%);
+  --hover-bg: hsl(0 0% 90%);
+  color:  hsl(0 0% 90%);
+  font-family: sans-serif;
+  border-radius: 100px;
+  border: 2px solid hsl(0 0% 90%);
+  background: hsl(0, 0%, 18%);
+
+}
+
+#myBtn:hover {
+  background-color:#474747; /* Add a dark-grey background on hover */
+  border: 2px solid hsl(68, 100%, 50%);
+
+
+}
+/* ------------------- CSS For Mobile Screens ------------------- */
+
+@media screen and (max-width: 890px) {
+  #header nav ul li a .color {
+    color: rgb(255, 200, 200);
+  }
+
+   #header {
+    /* background-image: url("https://i.ibb.co/jHTHTJx/alexander-shatov-PHH-0uw9-Qw-unsplash.jpg"); */
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+  } 
+
+  nav ul {
+    position: absolute;
+    top: 0px;
+    right: -500px;
+    height: 100vh;
+    width: 40%;
+    background: var(--primary-color);
+    display: flex;
+    flex-direction: column;
+    padding: 25px 25px;
+    z-index: 4;
+  }
+
+  nav ul .fa-solid {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    transition: color 0.5s;
+  }
+
+  nav ul .fa-solid:hover {
+    color: rgb(248, 0, 0);
+  }
+  nav .fa-solid,
+  nav p {
+    display: block;
+    font-size: 35px;
+    cursor: pointer;
+  }
+
+  nav ul li a {
+    transition: color 0.5s;
+    font-size: 23px;
+    margin-top: 15px;
+  }
+
+  nav ul li a:hover {
+    color: black;
+  }
+
+  .header-text {
+    margin-top: 250px;
+  }
+
+  .header-text p {
+    font-size: 27px;
+  }
+
+  .header-text h1 {
+    font-size: 45px;
+  }
+}
+

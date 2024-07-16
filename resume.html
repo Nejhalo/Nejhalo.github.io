@@ -34,6 +34,7 @@
     <link rel="stylesheet" type="text/css" href="Style/download.css" />
 
 
+
 	
     <title>MyResume</title>
 
@@ -59,8 +60,16 @@
 			<p>(+98) 912-779-8216</p>
 
 			<div class="size">
+			<button type="submit"  class="download " onclick="window.location.href='/Document/FatemehNehadlotfi-Resume.pdf'" >
+				<span class="back">
+				  <span></span>
+				</span>
+				Download
+			  </button>
+
+			 </div>
 	
-			    <a href="/Document/FatemehNehadlotfi-Resume.pdf" class="button" download = "FatemehNejadlotfi-Resume-PN">
+			  <!--<a href="/Document/FatemehNehadlotfi-Resume.pdf" class="button" download = "FatemehNejadlotfi-Resume-PN">
 					<ul>
 						<li>&#68;ownload</li>
 						<li>&#68;ownloading</li>
@@ -72,7 +81,8 @@
 				</a>
 			
 			
-		   </div>
+		   </div>   -->
+
 	
 		  </div>
 	
@@ -85,7 +95,7 @@
 		<div class="inner">
 			<div id="header">
 				<div class="container">
-				  <nav>
+				  <nav >
 					<a href="/index.html"><img src="https://i.ibb.co/jyzWsXF/Frame-19.png" class="logo"></a>
 					<ul id="mobile-menu">
 						<li><a href="index.html">Home<span class="color">.</span></a></li>
@@ -631,6 +641,14 @@ let points = pointsNew ? pointsNew : [
 	d = points.reduce((acc, point, i, a) => i === 0 ? `M ${point[0]},${point[1]}` : `${acc} ${getPoint(point, i, a, smoothing)}`, '');
 return `<path d="${d}" />`;
 }
+// btn
+const UPDATE = ({target, x, y }) => {
+  const bounds = target.getBoundingClientRect()
+  target.style.setProperty('--x', x - bounds.left)
+  target.style.setProperty('--y', y - bounds.top)
+}
 
+const BTNS = document.querySelectorAll('button')
+BTNS.forEach(BTN => BTN.addEventListener('pointermove', UPDATE))
 </script>
 </html>
