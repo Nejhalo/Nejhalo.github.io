@@ -1,506 +1,1386 @@
-<html lang="en">
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: 'Patrick Hand SC', 'Comic Neue', 'Comic Sans', 'Comic Sans MS', Arial, Helvetica, sans-serif;
+  box-sizing: border-box;
+}
 
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Fatemeh Nejadlotfi | Product designer</title>
- <!-- add icon link -->
- <link rel="icon" type="image/x-icon" href="ICO/Frame-19.ico" >
-
-  <!-- Font (Poppins) ------->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/CaseStudy2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-  <link >
-  <!-- Font Awsome Icons -->
-  <script src="https://kit.fontawesome.com/2786bc3471.js" crossorigin="anonymous"></script>
-  <script src="https://platform.linkedin.com/badges/js/profile.js" async defer type="text/javascript"></script> 
-  <script src="script/index.js"></script>
-
-  <link rel="stylesheet" type="text/css" href="Style/index.css" />
-  <link rel="stylesheet" type="text/css" href="Style/validation.css" />
-  <link rel="stylesheet" type="text/css" href="Style/colorful txt.css" />
-  <link rel="stylesheet" type="text/css" href="Style/auto-slider.css" />
-  <link rel="stylesheet" type="text/css" href="Style/auto-slider.css" />
+@font-face {
+  font-family: "Rosse Demo";
+  src: url(/ICO/rosse-font/RosseDemoRegular-dP87.ttf) format("truetype");
+}
+.customfont { 
+  font-family: "Rosse Demo", Verdana, Tahoma;
+  font-size: 50px;
+  font-weight: 800;
+}
 
 
-  <!-- Font Awsome Icons -->
-  <script src="https://kit.fontawesome.com/2786bc3471.js" crossorigin="anonymous"></script> 
+:root {
+  --primary-color: #b5c4fe;
+  --secondary-color: #636365;
+}
 
+::selection {
+  background-color: var(--primary-color);
+  color: rgb(0, 0, 0);
+}
 
-</head>
-<body>
-  
-  <!------------------------------ Home ------------------------------>
-   <div id="header">
-    <div class="container">
-      <nav>
-        <a href="/index.html"><img src="https://i.ibb.co/jyzWsXF/Frame-19.png" class="logo"></a>
-        <ul id="mobile-menu">
-          <li><a href="#header">Home<span class="color">.</span></a></li>
-          <li><a href="#about">About<span class="color">.</span></a></li> 
-          <!-- <li><a href="#services">Services<span class="color">.</span></a></li> -->
-          <li><a href="#portfolio">Works<span class="color">.</span></a></li>
-          <li><a href="#contact">Contact Me<span class="color">.</span></a></li>
-          <li><a href="#contact"> CV<span class="color">.</span></a></li>
-          <i class="fa-solid fa-xmark" onclick="closeMenu()"></i>
-        </ul>
-       <p onclick="openMenu()"><i class="fa-solid fa-bars" onclick="openMenue()"></i></p>
-      </nav> 
-
-      <div class="header-text">
-      
-        <p style=margin:10px auto 20px auto>Hi there, I'm </p>
-          <p class="customfont" class="color" style=margin:10px auto 20px auto><span >F</span><span > atemeh </span><span >N </span>ejadlotfi </span></p>
-          <h1 class="main-title" style=margin:10px auto 20px auto> I specialize in crafting exceptional digital experiences to help our clients achieve their goals.</h1>
-
- 
-
-          <button onclick="window.location.href='https://zeeg.me/nejadlotfi/30min?calendar_type=gregorian&month=2024-7&back=1/';" style=margin:10px auto 20px auto>
-            <span class="back">
-              <span>Book a short call 
-            </span>
-            </button> 
-    
-          
-         <!-- <span class="bgcolor">fff</span></h1>-->
-      </div>
-    </div>
-  </div>
-
-
-
-
-  
- <div class="container">
-  <h1 style="margin-bottom: 40px; align-items: center; justify-content: center;  display: flex;overflow: hidden;">Tools that I'm using daily</h1>
-  <div class="auto_slider_container">
-    <ul class="auto_slider">
-        <li><img src="https://i.ibb.co/tLYGsr1/image.png"  width="60" height="60" ></li>
-        <li><img src="https://i.ibb.co/CtM29py/image.png"   width="60" height="60" ></li>
-        <li><img src="https://i.ibb.co/YhkVhGB/image.png" width="60" height="60"></li>
-        <li><img src="https://i.ibb.co/jD7VgZN/image.png" width="60" height="60"></li>
-        <li><img src="https://i.ibb.co/qgz65Dq/image.png" width="60" height="60"></li>
-        <li><img src="https://i.ibb.co/LSnT23F/image.png" width="60" height="60"></li>
-        <li><img src="https://i.ibb.co/Rz9rmQL/image.png" width="60" height="60"></li>
-        <li><img src="https://i.ibb.co/djWtR51/image.png" width="60" height="60"></li>
-        <li><img src="https://i.ibb.co/kGWSg63/image.png" width="60" height="60"></li>
-        <li><img src="https://i.ibb.co/NNQzBCN/image.png" width="60" height="60"></li>
-        <li><img src="https://i.ibb.co/kMY7Jhf/image.png" width="60" height="60"></li>
-        <li><img src="https://i.ibb.co/VQgKbx3/image.png" width="60" height="60"></li>
-        <li><img src="https://i.ibb.co/MDKxj9x/image.jpg" width="60" height="60"></li>
-    </ul>
-    <ul class="auto_slider">
-      <li><img src="https://i.ibb.co/tLYGsr1/image.png"  width="60" height="60" ></li>
-      <li><img src="https://i.ibb.co/CtM29py/image.png"   width="60" height="60" ></li>
-      <li><img src="https://i.ibb.co/YhkVhGB/image.png" width="60" height="60"></li>
-      <li><img src="https://i.ibb.co/jD7VgZN/image.png" width="60" height="60"></li>
-      <li><img src="https://i.ibb.co/qgz65Dq/image.png" width="60" height="60"></li>
-      <li><img src="https://i.ibb.co/LSnT23F/image.png" width="60" height="60"></li>
-      <li><img src="https://i.ibb.co/Rz9rmQL/image.png" width="60" height="60"></li>
-      <li><img src="https://i.ibb.co/djWtR51/image.png" width="60" height="60"></li>
-      <li><img src="https://i.ibb.co/kGWSg63/image.png" width="60" height="60"></li>
-      <li><img src="https://i.ibb.co/NNQzBCN/image.png" width="60" height="60"></li>
-      <li><img src="https://i.ibb.co/kMY7Jhf/image.png" width="60" height="60"></li>
-      <li><img src="https://i.ibb.co/VQgKbx3/image.png" width="60" height="60"></li>
-      <li><img src="https://i.ibb.co/MDKxj9x/image.jpg" width="60" height="60"></li>
-    </ul>
-</div>
- </div>
-
-<!---<span>   
-    <div class="darkMood">
-            <input type="checkbox" class="checkbox" id="checkbox">
-            <label for="checkbox">
-              <i class="fas fa-moon"></i>
-              <i class="fas fa-sun"></i>
-              <div class="ball"></div>
-             </label>
-             
-          </div></span>  -->
-      
-<!--       
-<div id="header">
-      <div class="container">
-        <nav>
-          <img src="https://i.ibb.co/jyzWsXF/Frame-19.png" class="logo">
-          <ul id="mobile-menu">
-            <li><a href="/index.html"><span class="color">H</span>ome<span class="color">.</span></a></li>
-            <li><a href="/index.html#about">About</a></li> -->
-            <!-- <li><a href="/index.html#services">Services</a></li> -->
-            <!-- <li><a href="#portfolio">Work</a></li>
-            <li><a href="/index.html#contact">Contact Me</a></li>
-            <i class="fa-solid fa-xmark" onclick="closeMenu()"></i>
-          </ul>
-         <p onclick="openMenu()"><i class="fa-solid fa-bars" onclick="openMenue()"></i></p>
-        </nav>
-        </div> -->
-
-
-
-<!-----scroll me------------------------
-    <span class="scroll-btn">
-      <a href="#">
-        <span class="mouse">
-          <span>
-          </span>
-        </span>
-      </a>
-      <p style="  margin-left: -55px;
-      ">scroll me</p>
-    
-    </span>
-    ----->
-    
-
-  <!------------------------------ About ------------------------------>
-  <div id="about">
-    <div class="container">
-      <div class="row">
-     <div class="about-col-1"> 
-          <img src="https://i.ibb.co/J3RkGRK/q.jpg" alt="users">
-        </div>
-        <div class="about-col-2">
-          <h2 class="sub-title"><span style="font-weight: 50px;">About </span>Me<span class="color">.</span></h2>
-          <p>
-            I'm a UI UX designer with a curious mind, I enjoy meeting new people and understanding how they are solving problems,
-             this is one of the reasons why I invest my time in everything related to design (Research, Design thinking, etc.),
-             and talking to people in general, as always can be an opportunity to learn something new.
-              I see it as a chance to improve myself as a professional and put things into practice when I’m creating my solutions.
-            <a href="resume.html" style="font-weight: bold; background: var(--primary-color);color: rgb(0, 0, 0) " target="_blank"> Read more ➔  </a>
-          </p>
-       
-          <ul>
-            <li class="tab-links active-link" onclick="openTab('skills')">Skills</li>
-            <li class="tab-links" onclick="openTab('education')">Education</li>
-            <li class="tab-links" onclick="openTab('experiences')">Experiences</li>
-          </ul>
-
-          <div class="tab-contents active-tab" id="skills">
-            <h3 class="bgcolor">Designing</h3>
-            <p>Creating Innovative Designs</p>
-
-            <h3 class="bgcolor">Idea hamster</h3>
-            <p>Using technology for earning</p>
-
-            <h3 class="bgcolor">Blogging</h3>
-            <p>Covering the trends in Tech</p>
-
-          </div>
-
-          <div class="tab-contents education" id="education">
-            <h3 class="bgcolor">2021 - Present</h3>
-            <p>Learning design | Freelancer</p>
-
-            <h3 class="bgcolor">2017 - 2021</h3>
-            <p>Computer Software Engineering | Shariaty Technical and Vocational University</p>
-
-            <h3 class="bgcolor">2015 - 2017</h3>
-            <p>Computer | Vocational school Rahmani</p>
-
-          </div>
-
-          <div class="tab-contents experiences" id="experiences">
-            <h3 class="bgcolor">Bama Decore</h3>
-            <p>Works as a UI/UX Designer(Freelancer)</p>
-
-            <h3 class="bgcolor">UI/UX design</h3>
-            <p>learning UI/UX design professionally.</p>
-
-            <h3 class="bgcolor">Bana sazan</h3>
-            <p>Front End Web Developer - Intern</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-<!--           
-          <ul>
-            <li class="tab-links active-link" onclick="openTab('skills')">Skills</li>
-            <li class="tab-links" onclick="openTab('education')" >Education</li>
-            <li class="tab-links" onclick="openTab('experiences')" >Experiences</li>
-          </ul>
-             
-            <div class="tab-contents active-tab" id="skills">
-            <h3 class="bgcolor" >Reseach</h3>
-            <p >Creating Innovative Designs</p>
-
-            <h3 class="bgcolor" >Entrepreneurship</h3>
-            <p >Using technology for earning</p>
-
-            <h3 class="bgcolor" >Blogging</h3>
-            <p >Covering the trends in Tech</p>
-
-          </div>
-
- 
-          <div class="tab-contents education" id="education">
-            <h3 class="bgcolor"> - Present</h3>
-            <p>Freelancer</p>
-
-            <h3 class="bgcolor">2017 - 2021</h3>
-            <p>BE Computer Software | Shariaty Technical and Vocational University</p>
-
-            <h3 class="bgcolor">2015 - 2016</h3>
-            <p>Matriculation | Vocational High School Rahmani ,Computer Science</p> 
-             </div>
- 
-            
-
-          
-          <div class="tab-contents experiences" id="experiences">
-            <h3 class="bgcolor">BaMaDecore</h3>
-            <p>Works as a UI/UX Designer (Project)</p>
-
-            <h3 class="bgcolor">Human-Centered Design</h3>
-            <p>Coursera | University of California San Diego</p>
-
-            <h3 class="bgcolor">User Experience Design</h3>
-            <p>Amanj Academy</p> 
-      </div>
-        </div>
-      </div>
-    </div>
-  </div> -->
-
-  <!------------------------------ Services -----------------
-  <div id="services">
-    <div class="container">
-      <h2 class="sub-title">My Services<span class="color">.</span></h2>------------->
-
-      <!------------------------------
-      <div class="row">
-        <div class="services-col">
-          <i class="fa-brands fa-app-store"></i><br>
-          <h3>Iphone App Designing</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit amet quos fugit? Quae animi laborum libero, est praesentium unde iure.</p><br>
-          <a href="#">learn more</a>
-        </div>
-        <div class="services-col">
-          <i class="fa-brands fa-google-play"></i><br>
-          <h3>Android App Designing</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit amet quos fugit? Quae animi laborum libero, est praesentium unde iure.</p><br>
-          <a href="#">learn more</a>
-        </div>
-        <div class="services-col">
-          <i class="fa-brands fa-microsoft"></i></i>
-          <h3>Web App Designing</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit amet quos fugit? Quae animi laborum libero, est praesentium unde iure.</p><br>
-          <a href="#">learn more</a>
-        </div>
-      </div>
-    </div>
-  </div>
------------------>
-  <!------------------------------ Portfolio ------------------------------>
-  <div id="portfolio">
-    <div class="container">
-      <h2 class="sub-title"><span style="font-weight: 100px;">Selected</span> Work<span class="color">.</span></h2>
-            <!--------------------txt----------------->
-      <!----<div id="Proposal">
-        <div class="span">We excel at</div>
-        <div class="span" id="ProposalValue"></div>
-      </div>-->
-      
-      <!-- new -->
-      <div class="row">
-        <div class="portfolio-col">
-        <img src="https://i.ibb.co/9wSXSsz/mockuuups-mockup-of-smartphone-device-with-a-macbook-on-the-side-1.png" alt="mockuuups-mockup-of-smartphone-device-with-a-macbook-on-the-side-1"> 
-            <div class="layer">
-            <h3>Coinest</h3>
-            <p>Individual financial management projects for all self-dependent people that will help them gain their dreams and the best budgeting.</p>
-            <a href="CoinestProject.html"><i class="fa-solid fa-link"></i></a>
-          </div>
-        </div>
-        <div class="portfolio-col">
-          <img src="https://i.ibb.co/L0k4cW4/mockuuups-macbook-pro-mockup-on-a-table-with-a-plant-in-the-background-1.png" alt="mockuuups-macbook-pro-mockup-on-a-table-with-a-plant-in-the-background-1" >
-          <div class="layer">
-            <h3>TTCU</h3>
-            <p>This website is an integrated system for converging communication for students and professors when they can't get in touch.</p>
-            <a href="#"><i class="fa-solid fa-link"></i></a>
-          </div>
-        </div>
-        <div class="portfolio-col">
-          <img src="https://i.ibb.co/TtFwj2J/mockuuups-iphone-14-pro-on-a-plane-mockup-1.png" alt="mockuuups-iphone-14-pro-on-a-plane-mockup-1" >
-          <div class="layer">
-            <h3>Ariya Health</h3>
-            <p>Considering the problems in the field of health in IRAN, This is a comprehensive application for the health of residents.</p>
-            <a href="#"><i class="fa-solid fa-link"></i></a>
-          </div>
-        </div>
-      </div>
-      <button onclick="window.location.href='my-work.html'">
-        <span class="back">
-          <span></span>
-        </span>
-
-        View All Case Studies      </button>
-</a>
-    </div>
-  </div>
-
-  <!------------------------------ Contact ------------------------------>
-  <div id="contact">
-    <div class="container">
-      <div class="row">
-        <div class="contact-left">
-          <form action="https://formsubmit.co/fatemehnejadlotfi@gmail.com" method="POST" id="form" class="form">
-            
-            <div class="form-control">
-            <input type="text" name="name" id="name" placeholder="Your Name">
-            <i class="fas fa-check-circle"></i>
-            <i class="fas fa-exclamation-circle"></i>
-            <small>Error message</small>
-          </div>
-
-          <div class="form-control">
-            <input type="email" name="email" id="email" placeholder="Your Email" >
-            <i class="fas fa-check-circle"></i>
-            <i class="fas fa-exclamation-circle"></i>
-            <small>Error message</small>
-            </div>
-
-            <div class="form-control">
-            <textarea name="message" id="message" rows="10" placeholder="Your Message ..."></textarea>
-            <i class="fas fa-check-circle"></i>
-            <i class="fas fa-exclamation-circle"></i>
-            <small>Error message</small>
-            </div>
-            <!--<input type="submit" value="Submit" class="back">--->
-            <!-- class="not-allowed"  -->
-            <input type="hidden" name="_captcha" value="false"> 
-            <input type="hidden" name="_template" value="table">
-            <input type="hidden" name="_next" value=/http://127.0.0.1:5502/indexsuccsed.html>
-
-            <button type="submit" >
-              <span class="back">
-                <span></span>
-              </span>
-              Submit
-            </button>
-          </form>
-        </div>
-        <div class="contact-right">
-          <h2 class="sub-title">My Contact<span class="color">.</span></h2>
-       
-        <p class="bgcolor"><i class="fa fa-map-marker" aria-hidden="true"></i> Location</p>
-        <p> Tehran, IRAN</p>
-          <p class="bgcolor"><i class="fa-sharp fa-solid fa-phone"></i> Phone</p>
-          <p>(+98) 9127798216</p>
-          <p class="bgcolor"><i class="fa-solid fa-user"></i> Social Profiles</p>
-          <ul>
-
-           
-
-            <li><a href="mailto:fatemehnejadlotfi@gmail.com" target="_blank"><i class="fa fa-envelope-o" aria-hidden="true"></i>            </a></li>
-            <li><a href="https://linktr.ee/nejhalo" target="_blank"><i class="fa fa-link" aria-hidden="true"></i>
-            </a></li>
-            <li class="badge-base LI-profile-badge" data-locale="en_US" data-size="large" data-theme="dark" data-type="HORIZONTAL" data-vanity="nejadlotfi" data-version="v1"><a class="badge-base__link LI-simple-link" href="https://ir.linkedin.com/in/nejadlotfi?trk=profile-badge" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
-
-           
-          </ul>
-        </div>
-      </div>
-    </div>
-  </div>
-
-
-  
-
-
-  <!--- ## DRIBBBLE + TWITTER ############# 
-  <div class="socials">
-    <a class="dribbble" href="https://dribbble.com/shots/14882445-Magnetic-button-animation-CodePen" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 32 32"><path fill-rule="evenodd" clip-rule="evenodd" fill="black" d="M16 0C7.16703 0 0 7.16703 0 16C0 24.833 7.16703 32 16 32C24.8156 32 32 24.833 32 16C32 7.16703 24.8156 0 16 0ZM26.5683 7.37527C28.4772 9.70065 29.6226 12.6681 29.6573 15.8785C29.2061 15.7918 24.6941 14.872 20.1475 15.4447C20.0434 15.2191 19.9566 14.9761 19.8525 14.7332C19.5748 14.0738 19.2625 13.397 18.9501 12.7549C23.9826 10.7072 26.2733 7.75705 26.5683 7.37527ZM16 2.36009C19.4707 2.36009 22.6464 3.66161 25.0586 5.7961C24.8156 6.14317 22.7505 8.90239 17.8915 10.7245C15.6529 6.61171 13.1714 3.24512 12.7896 2.72451C13.8134 2.48156 14.8894 2.36009 16 2.36009ZM10.1866 3.64425C10.551 4.13015 12.9805 7.5141 15.2538 11.5401C8.86768 13.2408 3.22777 13.2061 2.62039 13.2061C3.50542 8.9718 6.36876 5.44902 10.1866 3.64425ZM2.32538 16.0174C2.32538 15.8785 2.32538 15.7397 2.32538 15.6009C2.9154 15.6182 9.54447 15.705 16.3644 13.6573C16.7636 14.4208 17.128 15.2017 17.4751 15.9826C17.3015 16.0347 17.1106 16.0868 16.9371 16.1388C9.89154 18.4121 6.14317 24.6247 5.8308 25.1453C3.6616 22.7332 2.32538 19.5228 2.32538 16.0174ZM16 29.6746C12.8416 29.6746 9.92625 28.5987 7.61822 26.7939C7.86117 26.2907 10.6377 20.9458 18.3427 18.256C18.3774 18.2386 18.3948 18.2386 18.4295 18.2213C20.3557 23.2017 21.1367 27.3839 21.3449 28.5813C19.6963 29.2928 17.8915 29.6746 16 29.6746ZM23.6182 27.3319C23.4794 26.4989 22.7505 22.5076 20.9631 17.5965C25.2495 16.9197 28.9978 18.0304 29.4664 18.1866C28.8764 21.987 26.6898 25.2668 23.6182 27.3319Z" fill="#EA4C89"></path></svg></a>
-    <a class="twitter" href="https://twitter.com/MilanRaring" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 72 72"><path fill="black" d="M67.812 16.141a26.246 26.246 0 0 1-7.519 2.06 13.134 13.134 0 0 0 5.756-7.244 26.127 26.127 0 0 1-8.313 3.176A13.075 13.075 0 0 0 48.182 10c-7.229 0-13.092 5.861-13.092 13.093 0 1.026.118 2.021.338 2.981-10.885-.548-20.528-5.757-26.987-13.679a13.048 13.048 0 0 0-1.771 6.581c0 4.542 2.312 8.551 5.824 10.898a13.048 13.048 0 0 1-5.93-1.638c-.002.055-.002.11-.002.162 0 6.345 4.513 11.638 10.504 12.84a13.177 13.177 0 0 1-3.449.457c-.846 0-1.667-.078-2.465-.231 1.667 5.2 6.499 8.986 12.23 9.09a26.276 26.276 0 0 1-16.26 5.606A26.21 26.21 0 0 1 4 55.976a37.036 37.036 0 0 0 20.067 5.882c24.083 0 37.251-19.949 37.251-37.249 0-.566-.014-1.134-.039-1.694a26.597 26.597 0 0 0 6.533-6.774z"></path></svg></a>
-    <a class="twitter" href="https://twitter.com/MilanRaring" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 72 72"><path fill="black" d="M67.812 16.141a26.246 26.246 0 0 1-7.519 2.06 13.134 13.134 0 0 0 5.756-7.244 26.127 26.127 0 0 1-8.313 3.176A13.075 13.075 0 0 0 48.182 10c-7.229 0-13.092 5.861-13.092 13.093 0 1.026.118 2.021.338 2.981-10.885-.548-20.528-5.757-26.987-13.679a13.048 13.048 0 0 0-1.771 6.581c0 4.542 2.312 8.551 5.824 10.898a13.048 13.048 0 0 1-5.93-1.638c-.002.055-.002.11-.002.162 0 6.345 4.513 11.638 10.504 12.84a13.177 13.177 0 0 1-3.449.457c-.846 0-1.667-.078-2.465-.231 1.667 5.2 6.499 8.986 12.23 9.09a26.276 26.276 0 0 1-16.26 5.606A26.21 26.21 0 0 1 4 55.976a37.036 37.036 0 0 0 20.067 5.882c24.083 0 37.251-19.949 37.251-37.249 0-.566-.014-1.134-.039-1.694a26.597 26.597 0 0 0 6.533-6.774z"></path></svg></a>
-  </div>--->
-
-  
-  <button onclick="topFunction()" id="myBtn" title="Go to top" >
-    <svg fill="#ffffff" height="24px" width="24px" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 330 330" xml:space="preserve">
-      <g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
-      <g id="SVGRepo_iconCarrier"> <path id="XMLID_224_" d="M325.606,229.393l-150.004-150C172.79,76.58,168.974,75,164.996,75c-3.979,0-7.794,1.581-10.607,4.394 l-149.996,150c-5.858,5.858-5.858,15.355,0,21.213c5.857,5.857,15.355,5.858,21.213,0l139.39-139.393l139.397,139.393 C307.322,253.536,311.161,255,315,255c3.839,0,7.678-1.464,10.607-4.394C331.464,244.748,331.464,235.251,325.606,229.393z">
-    </path> </g></svg>    </button>  
-    
-
-  <footer> 
-    <div class="container">
-      <p>Copyright © 202<span class="color">4 </span> <span class="color">|</span> All rights reserved.</p>
-    </div>  
-  </footer>
-
-</div>
-<script src="script/Validation.js"></script>
-</body>
-<script>
-
-  var tabLinks = document.getElementsByClassName("tab-links");
-var tabContents = document.getElementsByClassName("tab-contents");
-
-function openTab(tabName) {
-  for (let tabLink of tabLinks) {
-    tabLink.classList.remove("active-link");
+body {
+  background-color:#f2ebe5;
+  color: rgb(27, 27, 27);
+    /* overflow-y: hidden; Hide vertical scrollbar */
+    overflow-x: hidden; /* Hide horizontal scrollbar */
   }
 
-  for (let tabContent of tabContents) {
-    tabContent.classList.remove("active-tab");
+
+html {
+  scroll-behavior: smooth;
+}
+#header {
+  /* background-image: url("https://i.ibb.co/hXsrkMB/Untitled-1.jpg"); */
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  position: relative; 
+
+}
+
+/* ------------------- Utility Classes -------------------*/
+.color {
+  color: var(--primary-color);
+}
+
+span.bgcolor,
+.bgcolor {
+  background-color: var(--primary-color);
+  display: inline-block;
+  padding: 0 5px;
+  border-radius: 2px;
+  color: black;
+}
+
+.container {
+  padding: 20px 8%;
+}
+
+.sub-title {
+  font-size: 60px;
+  font-weight: 800;
+}
+.btn {
+  display: block;
+  margin: 20px auto 0px auto;
+  border: 1px solid var(--primary-color);
+  padding: 10px 30px;
+  border-radius: 5px;
+  color: var(--primary-color);
+  font-size: 20px;
+  font-weight: 600;
+  background-color: transparent;
+  cursor: pointer;
+  transition: background 0.5s, color 0.5s;
+}
+
+.btn:hover {
+  background-color: var(--primary-color);
+  color: black;
+}
+/* -------------------------------------------------------*/
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+nav img {
+  width: 190px;
+}
+
+nav .fa-solid,
+nav p {
+  display: none;
+}
+
+nav ul li {
+  display: inline-block;
+  margin-right: 18px;
+  position: relative;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: rgb(33, 36, 42);
+  font-size: 19px;
+  display: inline-block;
+  font-weight: 600;
+}
+
+nav ul li a span {
+  font-size: 18px;
+  font-weight: 900;
+}
+
+nav ul li a::after {
+  content: "";
+  width: 0%;
+  height: 3px;
+  background: var(--primary-color);
+  position: absolute;
+  left: 0px;
+  bottom: -6px;
+  transition: width 0.5s;
+}
+
+nav ul li a:hover::after {
+  width: 100%;
+}
+
+.header-text {
+  margin-top: 280px;
+}
+
+.header-text p {
+  font-size: 60px;
+  font-weight: 500;
+}
+
+.header-text h1 {
+  font-size: 40px;
+  font-weight: 500;
+}
+
+/* ------------------- About ------------------- */
+
+#about {
+  margin-top: 20px;
+}
+
+#about .container .row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.about-col-1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-basis: 35%;
+  border-radius: 17px;
+}
+
+.about-col-1 img {
+  width: 100%;
+  object-fit: cover;
+  border-radius: 17px;
+}
+
+.about-col-2 {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 60%;
+}
+
+.about-col-2 p {
+  font-size: 15px;
+}
+
+.about-col-2 ul {
+  margin-top: 20px;
+  list-style: none;
+}
+
+.about-col-2 ul li {
+  display: inline-block;
+  margin-right: 25px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 600;
+  position: relative;
+}
+
+.about-col-2 ul li::after {
+  content: "";
+  width: 0%;
+  height: 3px;
+  background: var(--primary-color);
+  position: absolute;
+  left: 0px;
+  bottom: -6px;
+  transition: width 0.5s;
+}
+
+.about-col-2 ul li:hover::after {
+  width: 50%;
+}
+
+.about-col-2 ul li.active-link::after {
+  width: 100%;
+}
+
+.tab-contents {
+  margin-top: 20px;
+  display: none;
+}
+
+.tab-contents h3 {
+  font-size: 14px;
+  margin-top: 20px;
+}
+
+.tab-contents p {
+  margin-top: 5px;
+}
+
+.tab-contents.active-tab {
+  display: block;
+}
+
+/* ------------------- Services ------------------- */
+#services {
+  margin-top: 20px;
+}
+
+#services .row {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  margin-top: 40px;
+}
+
+.services-col {
+  background-color: var(--secondary-color);
+  padding: 20px;
+  border-radius: 17px;
+  transition: background 1s, color 1s, transform 0.5s;
+}
+.services-col i {
+  font-size: 70px;
+}
+
+.services-col h3 {
+  margin-top: 10px;
+  font-size: 20px;
+}
+.services-col p {
+  margin-top: 10px;
+  font-size: 14px;
+}
+
+.services-col a {
+  text-decoration: none;
+  color: white;
+  font-weight: 600;
+  color: var(--primary-color);
+}
+
+.services-col:hover {
+  background-color: var(--primary-color);
+  color: black;
+  transform: translateY(-14px);
+}
+
+.services-col:hover a {
+  color: black;
+}
+
+/* ------------------- Portfolio ------------------- */
+
+#portfolio .row {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  margin-top: 40px;
+}
+
+.portfolio-col {
+  border-radius: 17px;
+  position: relative;
+  overflow: hidden;
+}
+
+.portfolio-col img {
+  width: 100%;
+  border-radius: 17px;
+  transition: transform 0.5s;
+}
+
+.portfolio-col:hover img {
+  transform: scale(1.2);
+}
+
+#portfolio .layer {
+  position: absolute;
+  right: 0px;
+  bottom: 0px;
+  width: 100%;
+  height: 0%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(
+    0deg,
+    rgb(204, 204, 204) 0%,
+    rgba(64, 64, 64, 0.645) 100%
+  );
+  border-radius: 17px;
+  padding: 0 40px;
+  text-align: center;
+  overflow: hidden;
+  transition: height 0.5s;
+}
+
+#portfolio .layer h3 {
+  font-size: 25px;
+  font-weight: 500;
+}
+
+#portfolio .layer p {
+  font-size: 15px;
+  margin-top: 25px;
+}
+
+#portfolio .layer a {
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  background-color: white;
+  color: var(--primary-color);
+  font-size: 17px;
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+}
+
+#portfolio .portfolio-col:hover .layer {
+  height: 100%;
+}
+
+/* ------------------- Contact ------------------- */
+#contact .row {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap-reverse;
+}
+
+.contact-left {
+  display: flex;
+  flex-basis: 50%;
+  flex-direction: column;
+}
+.contact-left form input,
+textarea {
+  display: block;
+  width: 100%;
+  margin-top: 20px;
+  padding: 10px 20px;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+  background-color: var(--secondary-color);
+  font-size: 16px;
+  color: white;
+}
+
+.contact-left form input::placeholder,
+textarea::placeholder {
+  color: white;
+}
+
+#contact form input[type="submit"] {
+  background-color: var(--primary-color);
+  width: fit-content;
+  font-size: 20px;
+  font-weight: 400;
+  color: black;
+  border-radius: 10px;
+  border: 1px solid var(--primary-color);
+  transition: background 0.5s, color 0.5s;
+  margin: 20px auto;
+  cursor: pointer;
+  padding: 8px 35px;
+}
+
+#contact form input[type="submit"]:hover {
+  background-color: transparent;
+  color: var(--primary-color);
+}
+
+.contact-right {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 45%;
+}
+
+.contact-right p {
+  font-size: 20px;
+  font-weight: 400;
+  margin-top: 8px;
+}
+
+.contact-right p.bgcolor {
+  margin-top: 20px;
+  display: inline-block;
+  width: fit-content;
+  padding: 3px 11px;
+}
+.contact-right ul {
+  list-style: none;
+  margin-top: 10px;
+}
+
+.contact-right ul li {
+  display: inline-block;
+  margin-right: 20px;
+}
+
+.contact-right ul li a {
+  font-size: 40px;
+  text-decoration: none;
+  display: inline-block;
+  transition: color 0.5s, transform 0.5s;
+  color: rgb(61, 61, 61);
+}
+
+.contact-right ul li a:hover {
+  color: var(--primary-color);
+  transform: translateY(-8px);
+}
+/* ------------------- Footer ------------------- */
+footer {
+  background: var(--secondary-color);
+  text-align: center;
+}
+
+/* ------------------- CSS For Mobile Screens ------------------- */
+
+@media screen and (max-width: 890px) {
+  #header nav ul li a .color {
+    color: rgb(255, 200, 200);
   }
 
-  event.currentTarget.classList.add("active-link");
-  document.getElementById(tabName).classList.add("active-tab");
-}
+   #header {
+    /* background-image: url("https://i.ibb.co/jHTHTJx/alexander-shatov-PHH-0uw9-Qw-unsplash.jpg"); */
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+  } 
 
-// ---------------- JS for Mobile Menu ------------------
-var mobileMenu = document.getElementById("mobile-menu");
-function openMenu() {
-  mobileMenu.style.right = "0px";
-}
+  nav ul {
+    position: absolute;
+    top: 0px;
+    right: -500px;
+    height: 100vh;
+    width: 40%;
+    background: var(--primary-color);
+    display: flex;
+    flex-direction: column;
+    padding: 25px 25px;
+    z-index: 4;
+  }
 
-function closeMenu() {
-  mobileMenu.style.right = "-400px";
-}
+  nav ul .fa-solid {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    transition: color 0.5s;
+  }
 
-//-----------------darkmode------------------------------------
-//----------------let checkbox =  document.getElementById('checkbox');
+  nav ul .fa-solid:hover {
+    color: rgb(248, 0, 0);
+  }
+  nav .fa-solid,
+  nav p {
+    display: block;
+    font-size: 35px;
+    cursor: pointer;
+  }
 
-//----------------checkbox.addEventListener('change', () => {
-//----------------  document.body.classList.toggle('dark');
-//----------------})//
+  nav ul li a {
+    transition: color 0.5s;
+    font-size: 23px;
+    margin-top: 15px;
+  }
 
-//-----------------btn--------------------------------------------//
-const UPDATE = ({target, x, y }) => {
-  const bounds = target.getBoundingClientRect()
-  target.style.setProperty('--x', x - bounds.left)
-  target.style.setProperty('--y', y - bounds.top)
-}
+  nav ul li a:hover {
+    color: black;
+  }
 
-const BTNS = document.querySelectorAll('button')
-BTNS.forEach(BTN => BTN.addEventListener('pointermove', UPDATE))
+  .header-text {
+    margin-top: 250px;
+  }
 
+  .header-text p {
+    font-size: 27px;
+  }
 
-
-//-----------------txt-----------------------//
-
-// top button:
-let mybutton = document.getElementById("myBtn");
-
-// When the user scrolls down 20px from the top of the document, show the button
-window.onscroll = function() {scrollFunction()};
-
-function scrollFunction() {
-  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-    mybutton.style.display = "block";
-  } else {
-    mybutton.style.display = "none";
+  .header-text h1 {
+    font-size: 45px;
   }
 }
 
-// When the user clicks on the button, scroll to the top of the document
-function topFunction() {
-  document.body.scrollTop = 0;
-  document.documentElement.scrollTop = 0;
+@media screen and (max-width: 600px) {
+  /* -------------- Utility Clases ------------------ */
+  .sub-title {
+    font-size: 40px;
+  }
+
+  nav ul li a {
+    font-size: 20px;
+  }
+
+  .header-text {
+    margin-top: 250px;
+  }
+
+  .header-text p {
+    font-size: 25px;
+  }
+
+  .header-text h1 {
+    font-size: 40px;
+  }
+
+  /*------------------- About ---------------- */
+  #about .container .row {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .about-col-1 {
+    width: 80%;
+  }
+
+  /*------------------- Services Section ---------------- */
+  .services-col:hover {
+    transform: translateY(-10px);
+  }
+  /*------------------- Contact Section ---------------- */
+  #contact .row {
+    flex-direction: column;
+  }
+
+  #contact p {
+    font-size: 16px;
+  }
+  .contact-left {
+    order: 2;
+  }
+  .contact-right {
+    order: 1;
+  }
 }
 
-  </script>
-</html>
+@media screen and (max-width: 890px) {
+  .header-text {
+    margin-top: 200px;
+  }
+
+  .header-text p {
+    font-size: 30px;
+  }
+
+  .header-text h1 {
+    font-size: 20px;
+  }
+}
+
+@media screen and (max-width: 502px) {
+  .header-text {
+    margin-top: 300px;
+  }
+
+  .header-text p {
+    font-size: 18px;
+  }
+
+  .header-text h1 {
+    font-size: 30px;
+  }
+}
+
+@media screen and (max-width: 387px) {
+  .header-text {
+    margin-top: 250px;
+  }
+
+  .header-text h1 {
+    font-size: 28px;
+  }
+}
+
+@media screen and (max-width: 364px) {
+  .header-text {
+    margin-top: 250px;
+  }
+
+  .header-text p {
+    font-size: 16px;
+  }
+
+  .header-text h1 {
+    font-size: 25px;
+  }
+}
+
+
+
+
+
+
+
+
+
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;800&display=swap");
+
+:root {
+  --bg: #ff000000;
+  --clr-1: #4a6eff;
+  --clr-2: hsl(149, 100%, 57%);
+  --clr-3: #ffdd00;
+  --clr-4: #ff00f2;
+
+  --blur: 1rem;
+  --fs: clamp(3rem, 8vw, 7rem);
+  --ls: clamp(-1.75px, -0.25vw, -3.5px);
+}
+
+
+*,
+*::before,
+*::after {
+  font-family: inherit;
+  box-sizing: border-box;
+}
+
+.content {
+  text-align: left;
+}
+
+.title {
+  font-size: var(--fs);
+  font-weight: 800;
+  letter-spacing: var(--ls);
+  position: relative;
+  overflow: hidden;
+  background: var(--bg);
+  margin: 0;
+}
+
+
+
+.aurora {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+  mix-blend-mode: darken;
+  pointer-events: none;
+}
+
+.aurora__item {
+  overflow: hidden;
+  position: absolute;
+  width: 60vw;
+  height: 60vw;
+  background-color: var(--clr-1);
+  border-radius: 37% 29% 27% 27% / 28% 25% 41% 37%;
+  filter: blur(var(--blur));
+  mix-blend-mode: overlay;
+}
+
+.aurora__item:nth-of-type(1) {
+  top: -50%;
+  animation: aurora-border 6s ease-in-out infinite,
+    aurora-1 12s ease-in-out infinite alternate;
+}
+
+.aurora__item:nth-of-type(2) {
+  background-color: var(--clr-3);
+  right: 0;
+  top: 0;
+  animation: aurora-border 6s ease-in-out infinite,
+    aurora-2 12s ease-in-out infinite alternate;
+}
+
+.aurora__item:nth-of-type(3) {
+  background-color: var(--clr-2);
+  left: 0;
+  bottom: 0;
+  animation: aurora-border 6s ease-in-out infinite,
+    aurora-3 8s ease-in-out infinite alternate;
+}
+
+.aurora__item:nth-of-type(4) {
+  background-color: var(--clr-4);
+  right: 0;
+  bottom: -50%;
+  animation: aurora-border 6s ease-in-out infinite,
+    aurora-4 24s ease-in-out infinite alternate;
+}
+
+@keyframes aurora-1 {
+  0% {
+    top: 0;
+    right: 0;
+  }
+
+  50% {
+    top: 100%;
+    right: 75%;
+  }
+
+  75% {
+    top: 100%;
+    right: 25%;
+  }
+
+  100% {
+    top: 0;
+    right: 0;
+  }
+}
+
+@keyframes aurora-2 {
+  0% {
+    top: -50%;
+    left: 0%;
+  }
+
+  60% {
+    top: 100%;
+    left: 75%;
+  }
+
+  85% {
+    top: 100%;
+    left: 25%;
+  }
+
+  100% {
+    top: -50%;
+    left: 0%;
+  }
+}
+
+@keyframes aurora-3 {
+  0% {
+    bottom: 0;
+    left: 0;
+  }
+
+  40% {
+    bottom: 100%;
+    left: 75%;
+  }
+
+  65% {
+    bottom: 40%;
+    left: 50%;
+  }
+
+  100% {
+    bottom: 0;
+    left: 0;
+  }
+}
+
+@keyframes aurora-4 {
+  0% {
+    bottom: -50%;
+    right: 0;
+  }
+
+  50% {
+    bottom: 0%;
+    right: 40%;
+  }
+
+  90% {
+    bottom: 50%;
+    right: 25%;
+  }
+
+  100% {
+    bottom: -50%;
+    right: 0;
+  }
+}
+
+@keyframes aurora-border {
+  0% {
+    border-radius: 37% 29% 27% 27% / 28% 25% 41% 37%;
+  }
+
+  25% {
+    border-radius: 47% 29% 39% 49% / 61% 19% 66% 26%;
+  }
+
+  50% {
+    border-radius: 57% 23% 47% 72% / 63% 17% 66% 33%;
+  }
+
+  75% {
+    border-radius: 28% 49% 29% 100% / 93% 20% 64% 25%;
+  }
+
+  100% {
+    border-radius: 37% 29% 27% 27% / 28% 25% 41% 37%;
+  }
+}
+  
+  @import url("https://fonts.googleapis.com/CaseStudy2?family=Inter:wght@400;800&display=swap");
+  
+  /* :root {
+    --bg: #ff000000;
+    --clr-1: #88e3ff;
+    --clr-2: hsl(146, 100%, 76%);
+    --clr-3: #ffe100;
+    --clr-4: #ef94ff;
+  
+    --blur: 1rem;
+    --fs: clamp(3rem, 8vw, 7rem);
+    --ls: clamp(-1.75px, -0.25vw, -3.5px);
+  }
+   */
+  
+ 
+  
+  *,
+  *::before,
+  *::after {
+    font-family: inherit;
+    box-sizing: border-box;
+  }
+  
+  .content {
+    text-align: left;
+  }
+  
+  .title {
+    font-size: var(--fs);
+    font-weight: 800;
+    letter-spacing: var(--ls);
+    position: relative;
+    overflow: hidden;
+    background: var(--bg);
+    margin: 0;
+  }
+  
+  /* .subtitle {
+  } */
+  
+
+/* In Dark Mood 
+body.dark{
+  background: #111;
+  color: #fafafa;
+}
+body.dark .ball{
+  transform: translate(42px);
+  background: #fafafa;
+}
+body.dark .fa-moon{
+  color: #111;
+}
+
+.darkMood{
+  background-color: rgb(133, 133, 133);
+  width: 60px;
+  height: 25px;
+  border-radius: 30px;
+  position: relative;
+  padding: 5px;
+}
+.checkbox{
+  opacity: 0;
+  position: absolute;
+}
+label{
+  display: flex;
+  justify-content: space-between;
+  align-items: center; 
+  padding:0px;
+}
+.fas{
+  font-size: 0.9.5rem;
+  color: white;
+}
+.ball{
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  transition: .2s;
+  background: #222;
+  position: absolute;
+  margin-left: -10px;
+}*/
+
+
+
+    /*------------------- Btn ---------------- */
+
+
+
+    button {
+      display: block;
+        margin: 20px auto 0px auto;
+        padding: 10px 30px;
+        border-radius: 5px;
+        font-size: 15px;
+        font-weight: 600;
+        cursor: pointer;
+      --button-bg: hsl(0, 0%, 0%);
+      --button-fg: hsl(0 0% 90%);
+      --hover-bg: hsl(0 0% 90%);
+      color:  hsl(0 0% 90%);
+      font-family: sans-serif;
+      padding: 1rem 6rem;
+      border-radius: 100px;
+      border: 2px solid hsl(0 0% 90%);
+      background: hsl(0, 0%, 0%);
+      cursor: pointer;
+      touch-action: none;
+      position: relative;
+      overflow: hidden;
+    }
+    
+    button:nth-of-type(2) {
+      --button-bg: hsl(0, 0%, 0%);
+      --hover-bg:  hsl(0 0% 90%);
+      color: hsl(0, 0%, 18%);
+    }
+    
+    button .back {
+      position: absolute;
+      inset: 0;
+      pointer-events: none;
+      overflow: hidden;
+      border-radius: 100px;
+    }
+    
+    .back > span {
+      left: calc(var(--x, 0) * 1px);
+      top: calc(var(--y, 0) * 1px);
+      width: 50%;
+      display: inline-block;
+      aspect-ratio: 1;
+      /* background: red; */
+      transform: translate(-50%, -50%) scale(var(--active, 0));
+      transition: transform 0.25s;
+      background: var(--hover-bg);
+      position: absolute;
+      pointer-events: none;
+      overflow: hidden;
+      mix-blend-mode: difference;
+      border-radius: 50%;
+    }
+    
+    button:is(:hover, :focus-visible) {
+      --active: 1.5;
+    }
+    
+    button:active {
+      --active: 3;
+    }
+    
+    button:active .back > span {
+      transition: transform 0.15s;
+    }
+    
+    @supports (transition-timing-function: linear(0, 1)) {
+      button:is(:hover, :focus-visible) .back > span {
+        transition-duration: 0.5s;
+        transition-timing-function: linear(
+          0, 0.5007 7.21%, 0.7803 12.29%,
+          0.8883 14.93%, 0.9724 17.63%,
+          1.0343 20.44%, 1.0754 23.44%,
+          1.0898 25.22%, 1.0984 27.11%,
+          1.1014 29.15%, 1.0989 31.4%,
+          1.0854 35.23%, 1.0196 48.86%,
+          1.0043 54.06%, 0.9956 59.6%,
+          0.9925 68.11%, 1
+        );
+      }
+    }
+
+/*------------txt---------*/
+
+
+#Proposal {
+  width: 600px;
+  display: flex;
+  gap: 15px;
+  font-size: 30px;
+}
+
+#ProposalValue {
+  display: flex;
+  color: #ffffff;
+    font-weight: 700;
+}
+
+.start {
+  opacity: 0;
+}
+
+.animation {
+  animation: fade .3s forwards;
+}
+
+
+@keyframes fade {
+  0%{
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100%{
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
+
+.holder-animation {
+  animation: holder 4s;
+}
+
+@keyframes holder {
+  0%{
+    opacity: 1;
+  }
+  95%{
+    opacity: 1;
+  }
+  100%{
+    opacity: 0;
+  }
+}
+
+body .socials {
+  position: fixed;
+  display: block;
+  left: 20px;
+  bottom: 20px;
+}
+body .socials > a {
+  display: block;
+  width: 30px;
+  opacity: 0.3;
+  transform: scale(var(--scale, 0.8));
+  transition: transform 0.3s cubic-bezier(0.38, -0.12, 0.24, 1.91);
+}
+body .socials > a:hover {
+  --scale: 1;
+}
+
+
+
+
+
+
+.ease-all{
+    -webkit-transition: all 400ms ease-in-out;
+    -moz-transition: all 400ms ease-in-out;
+    -o-transition: all 400ms ease-in-out;
+    -ms-transition: all 400ms ease-in-out;
+    transition: all 400ms ease-in-out;
+}
+
+/* Social Icons */
+
+.social{
+    height: 10rem;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+
+.social li a{
+    display: inline-block;
+    /* float: left;  commend delete kon*/
+    width: 40px;
+    height: 40px;
+    margin-right: 1rem;
+    text-align: center;
+    padding-top: 13px;
+    
+    -webkit-border-radius:20px;
+    -moz-border-radius:20px;
+    -o-border-radius:20px;
+    -ms-border-radius:20px;
+    border-radius:20px;
+    
+    /*background-color: #222;*/
+    -webkit-box-shadow: inset 0 0 0 40px #222;
+    -moz-box-shadow: inset 0 0 0 40px #222;
+    -o-box-shadow: inset 0 0 0 40px #222;
+    -ms-box-shadow: inset 0 0 0 40px #222;
+    box-shadow: inset 0 0 0 40px #222;
+    
+    color: #fff;
+}
+
+.social li a:hover{
+    -webkit-box-shadow: inset 0 0 0 3px #222;
+    -moz-box-shadow: inset 0 0 0 3px #222;
+    -o-box-shadow: inset 0 0 0 3px #222;
+    -ms-box-shadow: inset 0 0 0 3px #222;
+    box-shadow: inset 0 0 0 3px #222;
+    
+    color: #ffffff;
+}
+
+/*Top button*/
+#myBtn {
+  display: none; /* Hidden by default */
+  position: fixed; /* Fixed/sticky position */
+  bottom: 20px; /* Place the button at the bottom of the page */
+  right: 30px; /* Place the button 30px from the right */
+  z-index: 99; /* Make sure it does not overlap */
+  outline: none; /* Remove outline */
+  background-color:var(--button-bg); /* Set a background color */
+  color: white; /* Text color */
+  cursor: pointer; /* Add a mouse pointer on hover */
+  padding: 15px; /* Some padding */
+  border-radius: 50px; /* Rounded corners */
+  font-size: 18px; /* Increase font size */
+  border: 2px solid hsl(0 0% 90%);
+
+}
+
+/* }#myBtn:hover {
+  background-color:var(--hover-bg)
+  Add a dark-grey background on hover */ 
+
+/*-----------------------------Scroll down----
+@-webkit-keyframes ani-mouse {
+    0% {
+    opacity: 1;
+    top: 29%;
+    }
+    15% {
+    opacity: 1;
+    top: 50%;
+    }
+    50% {
+    opacity: 0;
+    top: 50%;
+    }
+    100% {
+    opacity: 0;
+    top: 29%;
+    }
+}
+@-moz-keyframes ani-mouse {
+    0% {
+    opacity: 1;
+    top: 29%;
+    }
+    15% {
+    opacity: 1;
+    top: 50%;
+    }
+    50% {
+    opacity: 0;
+    top: 50%;
+    }
+    100% {
+    opacity: 0;
+    top: 29%;
+    }
+}
+@keyframes ani-mouse {
+    0% {
+    opacity: 1;
+    top: 29%;
+    }
+    15% {
+    opacity: 1;
+    top: 50%;
+    }
+    50% {
+    opacity: 0;
+    top: 50%;
+    }
+    100% {
+    opacity: 0;
+    top: 29%;
+    }
+}
+ .scroll-btn {
+  padding-top:5%;
+    display: block;
+    position: absolute;
+    left: 0;
+    right: 0;
+    text-align: center;
+}
+.scroll-btn > * {
+    display: inline-block;
+    line-height: 18px;
+    font-size: 13px;
+    font-weight: normal;
+    color: #7f8c8d;
+    color: #ffffff;
+    font-family: "proxima-nova", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    letter-spacing: 2px;
+}
+.scroll-btn > *:hover,
+.scroll-btn > *:focus,
+.scroll-btn > *.active {
+    color: #ffffff;
+}
+.scroll-btn > *:hover,
+.scroll-btn > *:focus,
+.scroll-btn > *:active,
+.scroll-btn > *.active {
+    opacity: 0.8;
+    filter: alpha(opacity=80);
+}
+.scroll-btn .mouse {
+    position: relative;
+    display: block;
+    width: 35px;
+    height: 55px;
+    margin: 0 auto 20px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    border: 3px solid white;
+    border-radius: 23px;
+}
+.scroll-btn .mouse > * {
+    position: absolute;
+    display: block;
+    top: 29%;
+    left: 50%;
+    width: 8px;
+    height: 8px;
+    margin: -4px 0 0 -4px;
+    background: white;
+    border-radius: 50%;
+    -webkit-animation: ani-mouse 2.5s linear infinite;
+    -moz-animation: ani-mouse 2.5s linear infinite;
+    animation: ani-mouse 2.5s linear infinite;
+}
+/*----------------------------------------------*/*/
+
+
+/* disable cursor */
+[disabled] {
+  opacity: .6;
+  cursor: default;
+}
+
+.not-allowed {
+  cursor: not-allowed;
+}
+.button[disabled] {
+  opacity: 0.5;
+  cursor: not-allowed;}
+/*  */
+
+
+.scroll-effect {
+  text-align: center;
+}
+
+.btn-mouse {
+  display: inline-block;
+  width: 34px;
+  height: 55px;
+  background: rgba(255,255,255,0.5);
+  border-radius: 30px;
+  margin-top: 210px;
+  position: relative;
+  top: 0;
+  transition: 300ms ease all;
+  cursor: pointer;
+}
+
+.btn-mouse::after {
+  content: '';
+  width: 5px;
+  height: 11px;
+  background: #fff;
+  position: absolute;
+  border-radius: 10px;
+  top: 10px;
+  left: 50%;
+  margin-left: -2px;
+  animation: blink 400ms ease infinite alternate;
+  transition: 300ms ease all;
+}
+
+
+
+@keyframes blink {
+  0% {top:10px;}
+  100% {top: 13px;}
+}
+
+.btn-mouse:hover {
+  top: 15px;
+}
+
+.btn-mouse:hover::after {
+  background: #ff7800;
+}
+
+/* .handmade {
+  text-align:right;
+  margin-top:100px;
+}
+.handmade em {
+  font-family: 'Shadows Into Light', cursive;
+  font-size: 1.25em;
+  margin-left:5px;
+} */
+
+/*Top button*/
+#myBtn {
+  display: none; /* Hidden by default */
+  position: fixed; /* Fixed/sticky position */
+  bottom: 20px; /* Place the button at the bottom of the page */
+  right: 30px; /* Place the button 30px from the right */
+  z-index: 99; /* Make sure it does not overlap */
+  outline: none; /* Remove outline */
+  cursor: pointer; /* Add a mouse pointer on hover */
+  padding: 15px; /* Some padding */
+  border-radius: 50px; /* Rounded corners */
+  font-size: 18px; /* Increase font size */
+
+    border-radius: 5px;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+  --button-bg: hsl(0, 0%, 18%);
+  --button-fg: hsl(0 0% 90%);
+  --hover-bg: hsl(0 0% 90%);
+  color:  hsl(0 0% 90%);
+  font-family: sans-serif;
+  border-radius: 100px;
+  border: 2px solid hsl(0 0% 90%);
+  background: hsl(0, 0%, 18%);
+
+}
+
+#myBtn:hover {
+  background-color:#474747; /* Add a dark-grey background on hover */
+  border: 2px solid hsl(68, 100%, 50%);
+
+
+}
+
