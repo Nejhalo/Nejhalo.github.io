@@ -1,0 +1,123 @@
+#header {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  position: relative; 
+  /* position: sticky;
+  top: 0; */
+
+}
+
+/* ------------------- Utility Classes -------------------*/
+.color {
+  color: var(--primary-color);
+}
+
+span.bgcolor,
+.bgcolor {
+  background-color: var(--primary-color);
+  display: inline-block;
+  padding: 0 5px;
+  border-radius: 2px;
+  color: black;
+}
+
+/* .container {
+  padding: 20px 8%;
+} */
+
+.sub-title {
+  font-size: 60px;
+  font-weight: 800;
+}
+.btn {
+  display: block;
+  margin: 20px auto 0px auto;
+  border: 1px solid var(--primary-color);
+  padding: 10px 30px;
+  border-radius: 5px;
+  color: var(--primary-color);
+  font-size: 20px;
+  font-weight: 600;
+  background-color: transparent;
+  cursor: pointer;
+  transition: background 0.5s, color 0.5s;
+}
+
+.btn:hover {
+  background-color: var(--primary-color);
+  color: black;
+}
+/* -------------------------------------------------------*/
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+nav img {
+  width: 190px;
+}
+
+nav .fa-solid,
+nav p {
+  display: none;
+}
+
+nav ul li {
+  display: inline-block;
+  margin-right: 18px;
+  position: relative;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  font-size: 19px;
+  display: inline-block;
+  font-weight: 600;
+}
+
+nav ul li a span {
+  font-size: 18px;
+  font-weight: 900;
+}
+
+nav ul li a::after {
+  content: "";
+  width: 0%;
+  height: 3px;
+  background: var(--primary-color);
+  position: absolute;
+  left: 0px;
+  bottom: -6px;
+  transition: width 0.5s;
+}
+
+nav ul li a:hover::after {
+  width: 100%;
+}
+
+.header-text {
+  margin-top: 180px; 
+  margin-bottom: 160px; 
+}
+
+.header-text p {
+  font-size: 60px;
+  font-weight: 500;
+}
+
+.header-text h1 {
+  font-size: 40px;
+  font-weight: 500px;
+}
+
+/* .header-text h2 {
+  padding: 150px;
+  font-size: 20px;
+  font-weight: 300;
+  margin-left:100px;
+
+} */
