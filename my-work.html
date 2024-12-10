@@ -12,7 +12,8 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/CaseStudy2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="Style/myWork.css" />
-  
+  <link rel="stylesheet" href="/Style/gallary.css">
+
   <!-- Font Awsome Icons --->
   <script src="https://kit.fontawesome.com/2786bc3471.js" crossorigin="anonymous"></script> 
 
@@ -151,7 +152,7 @@
       <figure>
         <div class="portfolio-col">
           <!-- <a href="https://dribbble.com/shots/22954475-Food-with-Halloween-themes" target="_blank"> -->
-            <div class="slider-wrapper">
+            <!-- <div class="slider-wrapper">
               <div class="slider">
                 <img id="slide-1" src="/ICO/holloween concept.jpg" alt="" />
                 <img id="slide-2" src="/ICO/holloweenConsept.png" alt="3D" />
@@ -160,7 +161,23 @@
                 <a href="#slide-1"></a>
                 <a href="#slide-2"></a>
               </div>
-            </div>            
+            </div>             -->
+
+            <div class="gallery">
+              <img id="gallery-image" src="https://via.placeholder.com/600x400" alt="Image">
+              <div class="caption" id="image-caption">Image 1 Description</div>
+          </div>
+      
+          <div class="nav-icons">
+              <button class="icon-button" onclick="changeImage(-1)">
+                  <i class="fas fa-chevron-left"></i>
+              </button>
+              <button class="icon-button" onclick="changeImage(1)">
+                  <i class="fas fa-chevron-right"></i>
+              </button>
+          </div>
+
+
           </a>
         </div>
         <figcaption>
@@ -673,4 +690,45 @@ function topFunction() {
     document.getElementById(tabName).classList.add("active-tab");
   }
   </script>
+
+<script>
+  const images = [
+      {
+          src: 'ICO/Design-process.png',
+          caption: 'Image 1 Description'
+      },
+      {
+          src: 'https://via.placeholder.com/600x400/7f7fff/ffffff?text=Image+2',
+          caption: 'Image 2 Description'
+      },
+      {
+          src: 'https://via.placeholder.com/600x400/7fff7f/ffffff?text=Image+3',
+          caption: 'Image 3 Description'
+      },
+      {
+          src: 'https://via.placeholder.com/600x400/ffff7f/ffffff?text=Image+4',
+          caption: 'Image 4 Description'
+      }
+  ];
+
+  let currenthome = 0;
+
+  function changeImage(direction) {
+      currenthome += direction;
+
+      // Loop back to the first image if at the end
+      if (currenthome >= images.length) {
+          currenthome = 0;
+      }
+
+      // Loop back to the last image if at the start
+      if (currenthome < 0) {
+          currenthome = images.length - 1;
+      }
+
+      // Update image and caption
+      document.getElementById('gallery-image').src = images[currenthome].src;
+      document.getElementById('image-caption').innerText = images[currenthome].caption;
+  }
+</script>
 </html> 
