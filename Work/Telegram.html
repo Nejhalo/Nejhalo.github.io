@@ -70,7 +70,7 @@
    width: 0%;height: 3px;color:#6fa4ff;
   position: absolute;left: 0px;  bottom: -6px;transition: width 0.5s;} "
 
-  href="/Home.html">Home<span style=" font-size: 18px;font-weight:1000; color:#6fa4ff;">.</span></a></li>
+  href="/home.html">Home<span style=" font-size: 18px;font-weight:1000; color:#6fa4ff;">.</span></a></li>
  
           </ul>
          
@@ -370,22 +370,22 @@ const navRight = document.querySelector(".right");
 const images = document.querySelector(".images");
 const colors = document.querySelector(".colored-backgrounds");
 
-let Home = 0;
+let home = 0;
 
 function right() {
-  transform((Home = Home < 3 ? ++Home : 0));
+  transform((home = home < 3 ? ++home : 0));
 }
 
 function left() {
-  transform((Home = Home > 0 ? --Home : 3));
+  transform((home = home > 0 ? --home : 3));
 }
 
 navLeft.addEventListener("click", left);
 navRight.addEventListener("click", right);
 
-function transform(Home) {
-  images.style.transform = `translateX(-${Home * 100}%)`;
-  colors.style.transform = `translateX(-${Home * 100}%)`;
+function transform(home) {
+  images.style.transform = `translateX(-${home * 100}%)`;
+  colors.style.transform = `translateX(-${home * 100}%)`;
 }
 //new text
 gsap.registerPlugin(ScrollTrigger);

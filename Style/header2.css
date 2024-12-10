@@ -111,7 +111,7 @@ footer {
     display: flex;
     flex-direction: column;
     padding: 25px 25px;
-    z-Home: 4;
+    z-home: 4;
   }
 
   nav ul .fa-solid {

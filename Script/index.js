@@ -49,14 +49,14 @@ const textArray = ["hard", "fun", "a journey", "LIFE"];
 const typingDelay = 200;
 const erasingDelay = 100;
 const newTextDelay = 2000; // Delay between current and next text
-let textArrayHome = 0;
-let charHome = 0;
+let textArrayhome = 0;
+let charhome = 0;
 
 function type() {
-  if (charHome < textArray[textArrayHome].length) {
+  if (charhome < textArray[textArrayhome].length) {
     if(!cursorSpan.classList.contains("typing")) cursorSpan.classList.add("typing");
-    typedTextSpan.textContent += textArray[textArrayHome].charAt(charHome);
-    charHome++;
+    typedTextSpan.textContent += textArray[textArrayhome].charAt(charhome);
+    charhome++;
     setTimeout(type, typingDelay);
   } 
   else {
@@ -66,16 +66,16 @@ function type() {
 }
 
 function erase() {
-	if (charHome > 0) {
+	if (charhome > 0) {
     if(!cursorSpan.classList.contains("typing")) cursorSpan.classList.add("typing");
-    typedTextSpan.textContent = textArray[textArrayHome].substring(0, charHome-1);
-    charHome--;
+    typedTextSpan.textContent = textArray[textArrayhome].substring(0, charhome-1);
+    charhome--;
     setTimeout(erase, erasingDelay);
   } 
   else {
     cursorSpan.classList.remove("typing");
-    textArrayHome++;
-    if(textArrayHome>=textArray.length) textArrayHome=0;
+    textArrayhome++;
+    if(textArrayhome>=textArray.length) textArrayhome=0;
     setTimeout(type, typingDelay + 1100);
   }
 }

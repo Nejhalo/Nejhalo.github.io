@@ -144,7 +144,7 @@ nav svg {
   top: 0;
   width: 100%;
   height: 100%;
-  z-Home: -1;
+  z-home: -1;
 }
 
 nav path {
@@ -247,7 +247,7 @@ main {
   width: 60%;
   top: 0;
   left: 0;
-  z-Home: -1;
+  z-home: -1;
 }
 
 .colored-backgrounds {
@@ -671,22 +671,22 @@ const navRight = document.querySelector(".right");
 const images = document.querySelector(".images");
 const colors = document.querySelector(".colored-backgrounds");
 
-let Home = 0;
+let home = 0;
 
 function right() {
-  transform((Home = Home < 3 ? ++Home : 0));
+  transform((home = home < 3 ? ++home : 0));
 }
 
 function left() {
-  transform((Home = Home > 0 ? --Home : 3));
+  transform((home = home > 0 ? --home : 3));
 }
 
 navLeft.addEventListener("click", left);
 navRight.addEventListener("click", right);
 
-function transform(Home) {
-  images.style.transform = `translateX(-${Home * 100}%)`;
-  colors.style.transform = `translateX(-${Home * 100}%)`;
+function transform(home) {
+  images.style.transform = `translateX(-${home * 100}%)`;
+  colors.style.transform = `translateX(-${home * 100}%)`;
 }
 //new text
 gsap.registerPlugin(ScrollTrigger);

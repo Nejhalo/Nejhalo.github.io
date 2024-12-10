@@ -425,7 +425,7 @@ width: 100%;
     display: flex;
     flex-direction: column;
     padding: 25px 25px;
-    z-Home: 4;
+    z-home: 4;
   }
 
   nav ul .fa-solid {
@@ -570,7 +570,7 @@ display: none; /* Hidden by default */
 position: fixed; /* Fixed/sticky position */
 bottom: 20px; /* Place the button at the bottom of the page */
 right: 30px; /* Place the button 30px from the right */
-z-Home: 99; /* Make sure it does not overlap */
+z-home: 99; /* Make sure it does not overlap */
 outline: none; /* Remove outline */
 cursor: pointer; /* Add a mouse pointer on hover */
 padding: 15px; /* Some padding */
@@ -623,7 +623,7 @@ background: var(--primary-color);
 display: flex;
 flex-direction: column;
 padding: 25px 25px;
-z-Home: 4;
+z-home: 4;
 }
 
 nav ul .fa-solid {

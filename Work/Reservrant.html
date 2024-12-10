@@ -22,7 +22,7 @@
    <link rel="stylesheet" href="/Style/gallary.css">
    <script src="gallary.js"></script>
 
-   <script src="/Script/Home.js"></script>
+   <script src="/Script/home.js"></script>
    
 </head>
 <body> 
@@ -76,7 +76,7 @@
    width: 0%;height: 3px;color:#0091ff;
   position: absolute;left: 0px;  bottom: -6px;transition: width 0.5s;} "
 
-  href="/Home.html">Home<span style=" font-size: 18px;font-weight: 900; color:#cefc92;">.</span></a></li>
+  href="/home.html">Home<span style=" font-size: 18px;font-weight: 900; color:#cefc92;">.</span></a></li>
  
           </ul>
          
@@ -592,24 +592,24 @@ function openTab(tabName) {
       }
   ];
 
-  let currentHome = 0;
+  let currenthome = 0;
 
   function changeImage(direction) {
-      currentHome += direction;
+      currenthome += direction;
 
       // Loop back to the first image if at the end
-      if (currentHome >= images.length) {
-          currentHome = 0;
+      if (currenthome >= images.length) {
+          currenthome = 0;
       }
 
       // Loop back to the last image if at the start
-      if (currentHome < 0) {
-          currentHome = images.length - 1;
+      if (currenthome < 0) {
+          currenthome = images.length - 1;
       }
 
       // Update image and caption
-      document.getElementById('gallery-image').src = images[currentHome].src;
-      document.getElementById('image-caption').innerText = images[currentHome].caption;
+      document.getElementById('gallery-image').src = images[currenthome].src;
+      document.getElementById('image-caption').innerText = images[currenthome].caption;
   }
 </script>
 </html>
