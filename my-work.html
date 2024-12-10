@@ -13,6 +13,8 @@
   <link href="https://fonts.googleapis.com/CaseStudy2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="Style/myWork.css" />
   <link rel="stylesheet" href="/Style/gallary.css">
+  <link rel="stylesheet" href="/Style/slider.css">
+  <script src="/Script/slider.js" crossorigin="anonymous"></script> 
 
   <!-- Font Awsome Icons --->
   <script src="https://kit.fontawesome.com/2786bc3471.js" crossorigin="anonymous"></script> 
@@ -151,6 +153,37 @@
     <article>
       <figure>
         <div class="portfolio-col">
+          <div class="carousel-container">
+
+  
+            <div class="mySlides animate">
+              <img src="https://wallpapershome.com/images/pages/pic_h/23277.jpg" alt="slide" />
+              <div class="number">3 / 5</div>
+              <div class="text">Lorem ipsum dolor sit</div>
+            </div>
+          
+            <div class="mySlides animate">
+              <img src="https://wallpapershome.com/images/pages/pic_h/12596.jpg" alt="slide" />
+              <div class="number">4 / 5</div>
+              <div class="text">Doloribus quo alias reprehenderit</div>
+            </div>
+          
+        
+          
+            <!-- Next and previous buttons -->
+            <a class="prev" onclick="prevSlide()">&#10094;</a>
+            <a class="next" onclick="nextSlide()">&#10095;</a>
+          
+            <!-- The dots/circles -->
+            <div class="dots-container">
+              <!-- <span class="dots" onclick="currentSlide(1)"></span>
+              <span class="dots" onclick="currentSlide(2)"></span> -->
+              <span class="dots" onclick="currentSlide(3)"></span>
+              <span class="dots" onclick="currentSlide(4)"></span>
+              <!-- <span class="dots" onclick="currentSlide(5)"></span> -->
+            </div>
+          </div>
+
           <!-- <a href="https://dribbble.com/shots/22954475-Food-with-Halloween-themes" target="_blank"> -->
             <!-- <div class="slider-wrapper">
               <div class="slider">
@@ -163,7 +196,7 @@
               </div>
             </div>             -->
 
-            <div class="gallery">
+            <!-- <div class="gallery">
               <img id="gallery-image" src="https://via.placeholder.com/600x400" alt="Image">
               <div class="caption" id="image-caption">Image 1 Description</div>
           </div>
@@ -175,7 +208,7 @@
               <button class="icon-button" onclick="changeImage(1)">
                   <i class="fas fa-chevron-right"></i>
               </button>
-          </div>
+          </div> -->
 
 
           </a>
