@@ -36,7 +36,7 @@
   
   body {
     color: var(--text);
-    font-family: "Helvetica Neue";
+    font: "Helvetica Neue";
 
   }
   
