@@ -11,7 +11,7 @@
     margin: 0;
     padding: 0;
       box-sizing: border-box;
-      font-family: "Helvetica Neue";
+      /* font-family: "Helvetica Neue"; */
       box-sizing: border-box;
   }
   
@@ -36,7 +36,7 @@
   
   body {
     color: var(--text);
-    font: "Helvetica Neue";
+    font:'Poppins', sans-serif;
 
   }
   
