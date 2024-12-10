@@ -32,6 +32,8 @@ body {
   color: rgb(255, 255, 255);
     /* overflow-y: hidden; Hide vertical scrollbar */
     overflow-x: hidden; /* Hide horizontal scrollbar */
+    font-family: "Helvetica Neue";
+
   }
 
 
